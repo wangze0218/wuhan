@@ -1,4 +1,13 @@
 <style>
+    @media screen and (max-width: 993px) {
+        header .navbar .nav {
+            padding-left: 87px;
+        }
+    }
+    header .navbar-default{
+        background-color: #FFFFFF;
+        overflow: hidden;
+    }
     header nav{
         height: 70px;
     }
@@ -25,8 +34,8 @@
                 </div>
                 <div class="navbar-list col-xs-7 hidden-xs">
                         <ul class="nav pull-right" >
-                            <li class="active"><a href="#">主页</a></li>
-                            <li><a href="#">产品服务</a></li>
+                            {{--<li ><a href="#">主页</a></li>--}}
+                            <li class="active"><a href="#">产品服务</a></li>
                             <li><a href="#">解决方案</a></li>
                             <li><a href="#">新闻中心</a></li>
                             <li><a href="#">合作伙伴</a></li>

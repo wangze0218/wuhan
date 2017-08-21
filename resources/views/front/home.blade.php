@@ -1,9 +1,23 @@
 @extends('front.public.master')
 @section('style')
     <style>
-        .carousel-caption{
-            padding-bottom: 393px;
+
+        @media screen and (max-width: 959px) {
+            .carousel-caption{
+                padding-bottom: 100px;
+            }
         }
+        @media screen and (min-width:959px) and (max-width: 1200px) {
+            .carousel-caption{
+                padding-bottom: 200px;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            .carousel-caption{
+                padding-bottom: 300px;
+            }
+        }
+
         .carousel-caption p{
             font-size: 80px;
             font-weight: bolder;
@@ -53,7 +67,6 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img alt="" src="http://www.zaarapp.com/assets/images/b2.png" />
                             <div class="carousel-caption">
                                 <h2>
                                     大数据、舆情案例
@@ -62,6 +75,8 @@
                                     探索企业发展
                                 </p>
                             </div>
+                            <img alt="" src="http://www.zaarapp.com/assets/images/b2.png" />
+
                         </div>
                         <div class="item">
                             <img alt="" src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/product/product_banner.jpg" />
