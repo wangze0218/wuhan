@@ -18,14 +18,28 @@
         .home-describe p{
             font-size: 20px;
         }
-        .home-details{
-            background-image: url('http://www.zaarapp.com/assets/images/background-3.png');
+        .home-details .container{
+            padding: 100px 0px;
+            border-top:1px solid #eee ;
+            /*background-image: url('http://www.zaarapp.com/assets/images/background-3.png');*/
         }
-        .home-details img{
-            opacity: 0.8;
+        .home-details h1{
+            margin-top: 100px;
         }
         .home-details dd{
             margin-top: 35px;
+        }
+        .home-describe-img{
+            background: url('https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/product/bottom_bg.jpg');
+        }
+        .home-describe-img p{
+            font-size: 30px;
+        }
+        .home-describe-img button{
+            font-size: 18px;
+            margin-top: 20px;
+            line-height: 20px;
+            padding: 10px 40px;
         }
     </style>
 @endsection
@@ -93,9 +107,86 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid home-describe">
+                <div class="container-fluid home-details">
                     <div class="container">
-                        <h2>大数据时代，不要让数据沉睡！</h2>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <dl>
+                                    <h1>
+                                        洞察下一个商业机会
+                                    </h1>
+                                    <dd>
+                                        利用正确的数据，你可以发现业务中隐藏的商业机会。数据观提供自助式的分析平台，
+
+                                    </dd>
+                                    <dd>
+                                        让你的洞察不局限于固化的图表。
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="col-xs-6">
+                                <img src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/product/2_2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid home-details">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <img src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/product/2_3.png" alt="">
+                            </div>
+                            <div class="col-xs-6">
+                                <dl>
+                                    <h1>
+                                        全员参与，数据驱动
+                                    </h1>
+                                    <dd>
+                                        对于一个企业，利用数据不应该局限于少数的决策者，让每一个人都可以利
+                                    </dd>
+                                    <dd>
+                                        用数据提高工作成果，这将使企业更具竞争力。
+                                    </dd>
+                                    <dd>
+                                        数据观为企业提供一个基于数据的协作平台，你可以分享和获得更多业务见
+                                    </dd>
+                                    <dd>
+                                        解，提高工作成果。
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid home-details">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <dl>
+                                    <h1>
+                                        随身数据，随时响应
+                                    </h1>
+                                    <dd>
+                                        在移动互联网时代，每一个商业机会都转瞬即逝，企业需要更加灵活高效的
+                                    </dd>
+                                    <dd>
+                                        方式应对这些变化。数据观可以随时随地让你掌控业务变化，根据数据洞察。
+                                    </dd>
+                                    <dd>
+                                        快速指导下一步行动。
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="col-xs-6">
+                                <img src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/product/2_4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid home-describe home-describe-img">
+                    <div class="container">
+                        <h1>大数据时代，不要让数据沉睡！</h1>
+                        <button class="btn btn-warning btn-large">免费试用</button>
                         {{--<p>数据观为企业构建全员大数据的工作生态，用数据说话、用数据决策、用数据管理、用数据创新。</p>--}}
                     </div>
                 </div>
