@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/about_us', function () {
     return view('front.about_us');
 });
+
+Route::get('/cooperative_partner', function () {
+    return view('front.cooperative_partner');
+});
