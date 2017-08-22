@@ -1,4 +1,7 @@
 <style>
+    body{
+        font-family: "Microsoft Yahei", 微软雅黑;
+    }
     @media screen and (max-width: 993px) {
         header .navbar .nav {
             padding-left: 87px;
@@ -10,6 +13,7 @@
     }
     header nav{
         height: 70px;
+        /*font-family:'LiSu';*/
     }
     header .navbar-logo{
         margin-top: -14px;
