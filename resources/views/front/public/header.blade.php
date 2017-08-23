@@ -38,8 +38,8 @@
                 </div>
                 <div class="navbar-list col-xs-7 hidden-xs">
                         <ul class="nav pull-right" >
-                            {{--<li ><a href="#">主页</a></li>--}}
-                            <li class="active"><a href="#">产品服务</a></li>
+                            <li ><a href="#">首页</a></li>
+                            <li class="active"><a href="#">产品与服务</a></li>
                             <li><a href="#">解决方案</a></li>
                             <li><a href="#">新闻中心</a></li>
                             <li><a href="#">合作伙伴</a></li>
