@@ -22,3 +22,7 @@ Route::get('/about_us', function () {
 Route::get('/cooperative_partner', function () {
     return view('front.cooperative_partner');
 });
+
+Route::get('/sign_in',function (){
+   return view('front.sign');
+});
