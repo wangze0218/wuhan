@@ -23,6 +23,10 @@ Route::get('/cooperative_partner', function () {
     return view('front.cooperative_partner');
 });
 
-Route::get('/sign_in',function (){
-   return view('front.sign');
+Route::resource('/sign_in','Front\SignInController');
+
+Route::get('/behind', function () {
+    return view('behind.index');
 });
+Route::resource('/behind/user','Behind\UserController');
+

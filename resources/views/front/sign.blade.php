@@ -7,31 +7,65 @@
     <title>华云数海</title>
     @include('front.public.style')
     <style>
-        .sing_bg{
-            margin-top: 60px;
+        .container{
+            width:300px ;
         }
-        .sing_in_form{
-            width:80%;
-
+        .sing_bg{
+            margin-left: -30px;
+            margin-top: 60px;
+            margin-bottom: 30px;
         }
         .sign_input{
             box-shadow: none;
             transition: all .4s;
             padding: 5px;
+            padding-left: 30px;
             color: #8D8D8D;
             background-color: #FFF;
             border-radius: 0 !important;
-            margin-bottom: 5px;
         }
-        .i1{
+        .i:before{
+            font-size: 10px;
             color: #ccc;
             position: absolute;
-            margin: 131px 2px 4px 10px;
+            margin: 13px 2px 4px 10px;
             z-index: 3;
             width: 16px;
             height: 16px;
-            font-size: 16px;
             text-align: center;
+        }
+        #remember_span{
+            padding: 0px 8px;
+            border: 1px solid #e7e7e7;
+            position: relative;
+            margin-right: 5px;
+        }
+        input:checked + #remember_span:after{
+            content: "\002713";
+            color: #139DDC;
+            width: 80%;
+            height: 80%;
+            top: -14%;
+            left: 10%;
+            position: absolute;
+            border-radius: 50%;
+            display: block;
+            font-size: 16px;
+        }
+        .check-cont{
+            color: #828282;
+            font-weight: unset;
+            font-family: Roboto-Light;
+            font-size: 13px;
+            margin: 20px 0px;
+
+        }
+        #sing_in button{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .form-group{
+            margin: 0px 0px;
         }
     </style>
     @include('front.public.script')
@@ -40,69 +74,40 @@
 <section id="console_login">
     <div class="container-fluid">
         <div class="container">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <div class="logo sing_bg">
-                    <a href="http://www.zaarapp.com/" class="logo_text">
+                <div class="row sing_bg text-center">
+                    <a href="#">
                         <img src="https://console.zaarapp.com/assets/images/Logo.png" alt="logo">
                     </a>
                 </div>
-                <div class="sing_form sing_bg">
-                    <!-- BEGIN LOGIN FORM -->
+                <div class="row">
                     <form class="sing_in_form" id="sing_in" action="/sign_in" method="post" autocomplete="off" novalidate="novalidate">
-
+                        <input name="_token" type="hidden" value="{{csrf_token()}}">
                         <div class="form-group">
-                            <div class="input_ico">
                                 <span class="glyphicon glyphicon-user i" aria-hidden="true"></span>
                                 <input class="form-control sign_input" type="email" autofocus="" value="" autocomplete="off" placeholder="Email address" name="identity">
-                            </div>
                         </div>
                         <div class="form-group">
-                            <div class="input_ico">
                                 <span class="glyphicon glyphicon-lock i" aria-hidden="true"></span>
                                 <input class="form-control sign_input" type="password" maxlength="32" autocomplete="off" placeholder="Password" name="password" id="password">
-                            </div>
                         </div>
                         <div class="form-group">
                             <label for="remember" class="check-cont">
-                                <input type="checkbox" class="hidden" name="remember" id="remember" onclick="return true;">
-                                <span></span>
+                                <input id="remember" name="remmber" class="hidden" type="checkbox">
+                                <span id="remember_span"></span>
                                 Remember me
                             </label>
 
                         </div>
-                        <div class="login_action">
-                            <button type="submit" id="login-submit" class="btn btn-blue pull-right" name="login">
-                                <span class="submit-text"> Login <i class="icon_right white_ico"></i></span>
-                                <img src="https://console.zaarapp.com/assets/images/loader.gif" alt="loader" class="form-loader hidden">
-                            </button>
-                        </div>
-
-                        <div class="forget_pass">
-                            <a href="#" id="forget_pass">
-                                Forgot your Password? </a>
-
-                        </div>
-                        <div class="add_account">
-                            Don't have an account? <a href="http://www.zaarapp.com/sign_up/">Sign up</a>
+                        <div class="form-group">
+                            <button class="btn btn-info">Login</button>
                         </div>
                     </form>
-                    <!-- END LOGIN FORM -->
-
-
                 </div>
-                <div class="copyright">
+                <div class="row form-group text-center">
                     Copyright © 2017  <a href="http://www.zaarapp.com/"> ZAAR Technologies</a>
                 </div>
             </div>
-            <div class="col-md-4"></div>
-
-
         </div>
-    </div>
-
-
-
 </section>
 
 
