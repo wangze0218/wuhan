@@ -25,8 +25,15 @@ Route::get('/cooperative_partner', function () {
 
 Route::resource('/sign_in','Front\SignInController');
 
-Route::get('/behind', function () {
-    return view('behind.index');
+
+
+Route::group(['middleware' => 'BehindMiddleware'],function (){
+    //后台首页
+    Route::get('/behind', function () {
+        return view('behind.index');
+    });
+    //用户管理
+    Route::resource('/behind/user','Behind\UserController');
 });
-Route::resource('/behind/user','Behind\UserController');
+
 

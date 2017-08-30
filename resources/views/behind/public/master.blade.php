@@ -13,6 +13,40 @@
 
     <script src="{{asset('FlatLab/js/html5shiv.js')}}"></script>
     <script src="{{asset('FlatLab/js/respond.min.js')}}"></script>
+    <script>
+            //增删改查（单个）弹出层
+            function addOrEdit(url,title) {
+                layer.open({
+                    type: 2,
+                    area: ['500px', '300px'],
+                    fixed: false, //不固定
+                    maxmin: true,
+                    content: url,
+                    title:title
+                });
+                return false;
+            }
+            function remove(self) {
+                $.ajax({
+                    cache: true,
+                    type: "DELETE",
+                    url:self.href,
+                    data:{id:''},// 你的formid
+                    async: true,
+                    error: function(request) {
+                        alert("Connection error");
+                        console.log(request);
+                    },
+                    success: function(data) {
+                        if(data){
+                            var index = $('.delete').index(self);
+                            $('tr').eq(index+1).remove();
+                        }
+                    }
+                });
+                return false;
+            }
+    </script>
 </head>
 
 <body>

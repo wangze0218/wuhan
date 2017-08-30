@@ -12,7 +12,7 @@ use App\Model\Model;
 class UserModel extends Model
 {
     protected $table = 'data_user';
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'user_id';
 
     protected $guarded=[];
 

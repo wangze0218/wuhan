@@ -24,4 +24,5 @@
 <script src="{{asset('FlatLab/js/easy-pie-chart.js')}}"></script>
 <script src="{{asset('FlatLab/js/count.js')}}"></script>
 
-<script></script>
+<script src="{{asset('layer/layer.js')}}"></script>
+

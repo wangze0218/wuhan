@@ -10,6 +10,7 @@
 
     <title>FlatLab - Flat & Responsive Bootstrap Admin Template</title>
     @include('behind.public.style')
+    @yield('style')
 
     <script src="{{asset('FlatLab/js/html5shiv.js')}}"></script>
     <script src="{{asset('FlatLab/js/respond.min.js')}}"></script>
@@ -20,26 +21,16 @@
 
 <section id="container" >
 
-    @include('behind.public.header')
-
-    @include('behind.public.aside')
-
-    <section id="main-content">
-
-        <section class="wrapper site-min-height">
+    {{--<section id="main-content">--}}
 
             @yield('content')
 
-        </section>
 
-    </section>
-
-    @include('behind.public.footer')
-
+    {{--</section>--}}
 </section>
 
-
 @include('behind.public.script')
+@yield('script')
 
 <script>
     //owl carousel
@@ -62,6 +53,5 @@
     });
 
 </script>
-
 </body>
 </html>

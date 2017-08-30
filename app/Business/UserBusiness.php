@@ -12,6 +12,28 @@ use App\Model\UserModel;
 
 class UserBusiness
 {
+    public function userList()
+    {
+        $users['data'] = UserModel::getRecordListCondition(['deleted_at'=>null],['*'],['created_at'=>'desc'],1,15);
+        $users['count'] = UserModel::getRecordCountCondition(['deleted_at'=>null],['*'],['created_at'=>'desc'],1,15);
+        return $users;
+    }
+
+    public function user($id)
+    {
+        return UserModel::find($id);
+    }
+
+    public function userUpdate($id,$identity,$password)
+    {
+        $password = md5($password);
+        $user = UserModel::updateRecordORM($id,[
+            'user_name'=>$identity,
+            'user_password'=>$password
+        ]);
+        return $user;
+    }
+
     public function signOut()
     {
         //删除session
@@ -29,14 +51,27 @@ class UserBusiness
         if(!$user)return false;
         $this->signInSession($user);
         if($remmber) $this->remmber($user);
-
+        return $user;
     }
+
+    public function signUp($identity,$password)
+    {
+        $password = md5($password);
+        $user = UserModel::create([
+            'user_name'=>$identity,
+            'user_password'=>$password
+        ]);
+        return $user;
+    }
+
     private function signInSession($user)
     {
-        \Session::set('user_login',$user);
+        \Session::put('user_login',$user);
     }
+
     private function remmber($user)
     {
 
     }
+
 }

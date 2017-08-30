@@ -84,11 +84,11 @@
                         <input name="_token" type="hidden" value="{{csrf_token()}}">
                         <div class="form-group">
                                 <span class="glyphicon glyphicon-user i" aria-hidden="true"></span>
-                                <input class="form-control sign_input" type="email" autofocus="" value="" autocomplete="off" placeholder="Email address" name="identity">
+                                <input class="form-control sign_input" type="email" autofocus="" value="" autocomplete="off" placeholder="用户名称" name="identity">
                         </div>
                         <div class="form-group">
                                 <span class="glyphicon glyphicon-lock i" aria-hidden="true"></span>
-                                <input class="form-control sign_input" type="password" maxlength="32" autocomplete="off" placeholder="Password" name="password" id="password">
+                                <input class="form-control sign_input" type="password" maxlength="32" autocomplete="off" placeholder="用户密码" name="password" id="password">
                         </div>
                         <div class="form-group">
                             <label for="remember" class="check-cont">

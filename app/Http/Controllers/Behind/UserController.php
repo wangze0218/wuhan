@@ -22,7 +22,8 @@ class UserController
 
     public function index(Request $request)
     {
-        return view('behind.user.index');
+        $list = $this->userBusiness->userList();
+        return view('behind.user.index',['list'=>$list]);
     }
 
     public function store(Request $request)
@@ -30,10 +31,37 @@ class UserController
         $in = $request->all();
         $identity = $in['identity'];
         $password = $in['password'];
-        $remmber = isset($in['remmber'])?1:0;
 
-        $user = $this->userBusiness->signIn($identity,$password,$remmber);
-        if(!$user) return back()->withErrors('身份或者密码不对');
-        return redirect('/user');
+        return $this->userBusiness->signUp($identity,$password);
     }
+
+    public function create(Request $request)
+    {
+        return view('behind.user.create');
+    }
+
+    public function edit($id)
+    {
+        $user = $this->userBusiness->user($id);
+        return view('behind.user.edit',['user'=>$user]);
+    }
+
+    public function update(Request $request,$id)
+    {
+        $in = $request->all();
+        $identity = $in['identity'];
+        $password = $in['password'];
+        $user =  $this->userBusiness->userUpdate($id,$identity,$password);
+        if($user){
+            echo 1;
+        }else{
+            echo 2;
+        }
+    }
+
+    public function destroy($id)
+    {
+        //
+    }
+
 }

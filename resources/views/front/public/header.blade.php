@@ -58,7 +58,7 @@
                 </div>
                 <div class="col-xs-2 navbar-login">
                     <ul class="nav pull-right hidden-xs">
-                        <li><a class="btn btn-default">登陆</a></li>
+                        <li><a href="/sign_in" class="btn btn-default">登陆</a></li>
                     </ul>
                 </div>
         </div>

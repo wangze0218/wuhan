@@ -34,6 +34,12 @@ class SignInController
 
         $user = $this->userBusiness->signIn($identity,$password,$remmber);
         if(!$user) return back()->withErrors('身份或者密码不对');
+        return redirect('/behind/');
+    }
+
+    public function create()
+    {
+        $this->userBusiness->signOut();
         return redirect('');
     }
 }
