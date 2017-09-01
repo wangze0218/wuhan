@@ -23,10 +23,21 @@ Route::get('/cooperative_partner', function () {
     return view('front.cooperative_partner');
 });
 
+Route::get('/service', function () {
+    return view('front.service');
+});
+
+Route::get('news_center',function (){
+    return view('front.news_center');
+});
+
+//
+//========================================================================================================
+//
+//========================================================================================================
+//
+//========================================================================================================
 Route::resource('/sign_in','Front\SignInController');
-
-
-
 Route::group(['middleware' => 'BehindMiddleware'],function (){
     //后台首页
     Route::get('/behind', function () {

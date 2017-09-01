@@ -38,12 +38,12 @@
                 </div>
                 <div class="navbar-list col-xs-7 hidden-xs">
                         <ul class="nav pull-right" >
-                            <li ><a href="#">首页</a></li>
-                            <li class="active"><a href="#">产品与服务</a></li>
+                            <li ><a href="/">首页</a></li>
+                            <li class="active"><a href="/service">产品与服务</a></li>
                             <li><a href="#">解决方案</a></li>
-                            <li><a href="#">新闻中心</a></li>
-                            <li><a href="#">合作伙伴</a></li>
-                            <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="#">关于我们 <b class="caret"></b></a>
+                            <li><a href="/news_center">新闻中心</a></li>
+                            <li><a href="/cooperative_partner">合作伙伴</a></li>
+                            <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="/about_us">关于我们 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">下拉导航1</a></li>
                                     <li><a href="#">下拉导航2</a></li>
