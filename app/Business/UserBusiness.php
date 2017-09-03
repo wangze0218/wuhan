@@ -9,6 +9,7 @@
 namespace App\Business;
 
 use App\Model\UserModel;
+use App\System\ResponseException;
 
 class UserBusiness
 {
@@ -27,6 +28,8 @@ class UserBusiness
     public function userUpdate($id,$identity,$password)
     {
         $password = md5($password);
+        $this->userNameRepeat($identity,$id);
+
         $user = UserModel::updateRecordORM($id,[
             'user_name'=>$identity,
             'user_password'=>$password
@@ -57,6 +60,8 @@ class UserBusiness
     public function signUp($identity,$password)
     {
         $password = md5($password);
+        $this->userNameRepeat($identity);
+
         $user = UserModel::create([
             'user_name'=>$identity,
             'user_password'=>$password
@@ -72,6 +77,25 @@ class UserBusiness
     private function remmber($user)
     {
 
+    }
+
+    private function userNameRepeat($identity,$id=0)
+    {
+        if($id){
+            $user = UserModel::find($id);
+            if($user->user_name != $identity){
+                $num = UserModel::getRecordCountCondition([
+                    'user_name'=>$identity
+                ]);
+                if($num>0) throw new ResponseException('用户名重复',20000);
+            }
+        }else{
+            $num = UserModel::getRecordCountCondition([
+                'user_name'=>$identity
+            ]);
+            if($num>0) throw new ResponseException('用户名重复',20000);
+        }
+        return false;
     }
 
 }

@@ -6,7 +6,7 @@
             {{--Basic Forms--}}
         {{--</header>--}}
         <div class="panel-body">
-            <form id="from" role="form" action="/behind/user" onsubmit="return update({{$user->user_id}});" method="PUT">
+            <form id="from" role="form" action="/behind/user" onsubmit="return update('{{'/behind/user/'.$user->user_id}}');" method="PUT">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <div class="form-group">
                     <label for="exampleInputEmail1">用户名称</label>
@@ -22,28 +22,4 @@
         </div>
     </section>
 
-@endsection
-@section('script')
-    <script>
-        function update($id) {
-            $.ajax({
-                cache: true,
-                type: "PUT",
-                url:"/behind/user/"+$id,
-                data:$('#from').serialize(),// 你的formid
-                async: true,
-                error: function(request) {
-                    alert("Connection error");
-                },
-                success: function(data) {
-                    if(data){
-                        var index = parent.layer.getFrameIndex(window.name); //获取窗口索引
-                        parent.layer.close(index);
-                        parent.location.reload();
-                    }
-                }
-            });
-            return false;
-        }
-    </script>
 @endsection

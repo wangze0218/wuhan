@@ -26,21 +26,22 @@
                 });
                 return false;
             }
-            function remove(self) {
-                $.ajax({
+            function remove(url) {
+                    $.ajax({
                     cache: true,
                     type: "DELETE",
-                    url:self.href,
-                    data:{id:''},// 你的formid
+                    url:url,
+                    data:{_token:"{{ csrf_token() }}"},// 你的formid
                     async: true,
                     error: function(request) {
                         alert("Connection error");
-                        console.log(request);
                     },
                     success: function(data) {
-                        if(data){
+                        if(data.code == 10000){
                             var index = $('.delete').index(self);
                             $('tr').eq(index+1).remove();
+                        }else{
+                            alert('删除失败');
                         }
                     }
                 });

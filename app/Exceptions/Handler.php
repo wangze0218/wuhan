@@ -5,6 +5,7 @@ namespace App\Exceptions;
 use Exception;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use App\System\ResponseException;
 
 class Handler extends ExceptionHandler
 {
@@ -44,7 +45,24 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
-        return parent::render($request, $exception);
+
+        $response =  parent::render($request, $exception);
+
+        if ($exception instanceof ResponseException){
+            $code = $exception->getCode();
+            $msg = $exception->getMessage();
+            return $this->_response($code,$msg);
+        }
+        return $response;
+
+    }
+
+    public function _response($responseCode,$responseMsg){
+        return response()->json([
+            'code'=>$responseCode,
+            'msg'=>$responseMsg,
+            'date'=>''
+        ]);
     }
 
     /**

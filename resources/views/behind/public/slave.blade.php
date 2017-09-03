@@ -51,6 +51,51 @@
     $(function(){
         $('select.styled').customSelect();
     });
+        function add(url) {
+            $.ajax({
+                cache: true,
+                type: "post",
+                url:url,
+                data:$('#from').serialize(),// 你的formid
+                async: true,
+                error: function(request) {
+                    alert("Connection error");
+                },
+                success: function(data) {
+                    if(data.code != 10000){
+                        alert(data.msg);
+                    }else{
+                        var index = parent.layer.getFrameIndex(window.name); //获取窗口索引
+                        parent.layer.close(index);
+                        parent.location.reload();
+                    }
+                }
+            });
+            return false;
+        };
+        function update(url) {
+            $.ajax({
+                cache: true,
+                type: "PUT",
+                url:url,
+                data:$('#from').serialize(),// 你的formid
+                async: true,
+                error: function(request) {
+                    alert("Connection error");
+                },
+                success: function(data) {
+                    if(data.code != 10000){
+                        alert(data.msg);
+                    }else{
+                        var index = parent.layer.getFrameIndex(window.name); //获取窗口索引
+                        parent.layer.close(index);
+                        parent.location.reload();
+                    }
+                }
+            });
+            return false;
+        }
+
 
 </script>
 </body>

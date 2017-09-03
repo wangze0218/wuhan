@@ -7,12 +7,16 @@
  */
 
 namespace App\Http\Controllers\Behind;
+use App\Model\UserModel;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Business\UserBusiness;
+use App\ResponseTrait;
 
 class UserController
 {
+    use ResponseTrait;
+
     private $userBusiness;
 
     public function __construct(UserBusiness $userBusiness)
@@ -31,8 +35,8 @@ class UserController
         $in = $request->all();
         $identity = $in['identity'];
         $password = $in['password'];
-
-        return $this->userBusiness->signUp($identity,$password);
+        $user =  $this->userBusiness->signUp($identity,$password);
+        return $this->_response(10000,'请求成功',$user);
     }
 
     public function create(Request $request)
@@ -52,16 +56,13 @@ class UserController
         $identity = $in['identity'];
         $password = $in['password'];
         $user =  $this->userBusiness->userUpdate($id,$identity,$password);
-        if($user){
-            echo 1;
-        }else{
-            echo 2;
-        }
+        return $this->_response(10000,'请求成功',$user);
     }
 
     public function destroy($id)
     {
-        //
+        UserModel::destroy($id);
+        return $this->_response(10000,'删除成功');
     }
 
 }

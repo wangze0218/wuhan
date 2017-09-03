@@ -29,6 +29,11 @@
     .navbar-login a{
         margin-top: 15px;
     }
+    .shadow{
+        vertical-align: middle;
+        border: 1px solid white;
+        box-shadow: 0 6px 30px -10px rgba(0, 0, 0, .6)!important;
+    }
 </style>
 <header class="navbar">
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -43,17 +48,18 @@
                             <li><a href="#">解决方案</a></li>
                             <li><a href="/news_center">新闻中心</a></li>
                             <li><a href="/cooperative_partner">合作伙伴</a></li>
-                            <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="/about_us">关于我们 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">下拉导航1</a></li>
-                                    <li><a href="#">下拉导航2</a></li>
-                                    <li><a href="#">其他</a></li>
-                                    <li class="divider"></li>
-                                    <li class="nav-header">标签</li>
-                                    <li><a href="#">链接1</a></li>
-                                    <li><a href="#">链接2</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="/about_us">关于我们</a></li>
+                            {{--<li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="/about_us">关于我们 <b class="caret"></b></a>--}}
+                                {{--<ul class="dropdown-menu">--}}
+                                    {{--<li><a href="#">下拉导航1</a></li>--}}
+                                    {{--<li><a href="#">下拉导航2</a></li>--}}
+                                    {{--<li><a href="#">其他</a></li>--}}
+                                    {{--<li class="divider"></li>--}}
+                                    {{--<li class="nav-header">标签</li>--}}
+                                    {{--<li><a href="#">链接1</a></li>--}}
+                                    {{--<li><a href="#">链接2</a></li>--}}
+                                {{--</ul>--}}
+                            {{--</li>--}}
                         </ul>
                 </div>
                 <div class="col-xs-2 navbar-login">

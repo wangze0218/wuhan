@@ -40,7 +40,7 @@
                                 @if(\Session('user_login')->user_admin == 1)
                                 <td>
                                     <button onclick="return addOrEdit('/behind/user/{{$v->user_id}}/edit','用户编辑');" class="btn btn-primary btn-xs"><i class="icon-pencil"></i></button>
-                                    <button class="btn btn-danger btn-xs"><i class="icon-trash "></i></button>
+                                    <button onclick="return remove('/behind/user/{{$v->user_id}}');" class="btn btn-danger btn-xs"><i class="icon-trash "></i></button>
                                 </td>
                                 @endif
                             </tr>
