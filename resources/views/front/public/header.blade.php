@@ -45,7 +45,7 @@
                         <ul class="nav pull-right" >
                             <li ><a href="/">首页</a></li>
                             <li class="active"><a href="/service">产品与服务</a></li>
-                            <li><a href="#">解决方案</a></li>
+                            <li><a href="/solution">解决方案</a></li>
                             <li><a href="/news_center">新闻中心</a></li>
                             <li><a href="/cooperative_partner">合作伙伴</a></li>
                             <li><a href="/about_us">关于我们</a></li>

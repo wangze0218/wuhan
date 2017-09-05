@@ -31,6 +31,10 @@ Route::get('news_center',function (){
     return view('front.news_center');
 });
 
+Route::get('solution',function (){
+    return view('front.solution');
+});
+
 //
 //========================================================================================================
 //
