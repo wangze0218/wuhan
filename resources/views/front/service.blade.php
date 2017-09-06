@@ -45,7 +45,7 @@
             <div class="page-title">
                 <h1>产品服务中心</h1>
             </div>
-            <div class="row" style="width: 1080px">
+            <div class="row" style="width: 1080px;margin-bottom: 100px">
                 <div class="col-md-4">
                     <div class="thumbnail">
                         <img data-src="holder.js/100%x200" alt="100%x200" src="http://www.chinadata8.com/public/img/yqfw-img01.jpg" data-holder-rendered="true" style="height: 320px; width: 320px; display: block;">
