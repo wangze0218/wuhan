@@ -1,6 +1,4 @@
 
-
-
 <!-- js placed at the end of the document so the pages load faster -->
 <script src="{{asset('FlatLab/js/jquery.js')}}"></script>
 <script src="{{asset('FlatLab/js/jquery-1.8.3.min.js')}}"></script>
@@ -25,4 +23,7 @@
 <script src="{{asset('FlatLab/js/count.js')}}"></script>
 
 <script src="{{asset('layer/layer.js')}}"></script>
+<script src="{{asset('FlatLab/assets/bootstrap-fileupload/bootstrap-fileupload.js')}}"></script>
+
+
 

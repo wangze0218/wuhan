@@ -9,3 +9,9 @@
 <link href="{{asset('FlatLab/css/style.css')}}" rel="stylesheet">
 <link href="{{asset('FlatLab/css/style-responsive.css')}}" rel="stylesheet" />
 
+
+
+<!--external css-->
+
+<link rel="stylesheet" type="text/css" href="{{asset('FlatLab/assets/bootstrap-fileupload/bootstrap-fileupload.css')}}" />
+

@@ -14,6 +14,12 @@
                     <span>用户管理</span>
                 </a>
             </li>
+            <li>
+                <a href="/behind/article" >
+                    <i class="icon-user"></i>
+                    <span>文章管理</span>
+                </a>
+            </li>
         </ul>
         <!-- sidebar menu end-->
     </div>

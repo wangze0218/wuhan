@@ -15,10 +15,10 @@
     <script src="{{asset('FlatLab/js/respond.min.js')}}"></script>
     <script>
             //增删改查（单个）弹出层
-            function addOrEdit(url,title) {
+            function addOrEdit(url,title,size) {
                 layer.open({
                     type: 2,
-                    area: ['500px', '300px'],
+                    area: size,
                     fixed: false, //不固定
                     maxmin: true,
                     content: url,
