@@ -39,7 +39,7 @@
                     success: function(data) {
                         if(data.code == 10000){
                             var index = $('.delete').index(self);
-                            $('tr').eq(index+1).remove();
+                            $('tr').eq(index).remove();
                         }else{
                             alert('删除失败');
                         }

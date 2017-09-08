@@ -5,7 +5,7 @@
         <div class="col-md-12">
             <section class="panel">
                 <div class="panel-body">
-                    <form action="/behind/article" method = 'post' enctype="multipart/form-data" class="form-horizontal tasi-form">
+                    <form action="/behind/article" role="form" id="from" method = 'post' onsubmit="return add('/behind/article/');" enctype="multipart/form-data" class="form-horizontal tasi-form">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <div class="form-group">
                             <label class="control-label col-md-3">文章类型</label>
@@ -21,6 +21,14 @@
                             <label class="control-label col-md-3">标题</label>
                             <div class="col-md-4">
                                 <input type="text" name="title" class="colorpicker-default form-control" value="请输入标题">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3">标题详情</label>
+                            <div class="col-md-4">
+                                <textarea name="title_describe" id="" cols="50" rows="4"></textarea>
+                                {{--<input type="text" name="title" class="colorpicker-default form-control" value="请输入标题">--}}
+
                             </div>
                         </div>
                         <div class="form-group last">
@@ -75,7 +83,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-default btn-lg btn-block">提交文章</button>
+                        <button type="submit" class="btn btn-default btn-lg btn-block">提交文章</button>
                     </form>
 
                 </div>

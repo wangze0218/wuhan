@@ -62,16 +62,21 @@
         $('select.styled').customSelect();
     });
         function add(url) {
+            var formData = new FormData(document.getElementById("from"));
+            console.log(formData);
             $.ajax({
                 cache: true,
                 type: "post",
                 url:url,
-                data:$('#from').serialize(),// 你的formid
+                contentType:false,
+                processData:false,
+                data:formData,// 你的formid
                 async: true,
                 error: function(request) {
                     alert("Connection error");
                 },
                 success: function(data) {
+                    console.log(data);
                     if(data.code != 10000){
                         alert(data.msg);
                     }else{
@@ -94,6 +99,7 @@
                     alert("Connection error");
                 },
                 success: function(data) {
+                    console.log(data);
                     if(data.code != 10000){
                         alert(data.msg);
                     }else{

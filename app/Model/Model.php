@@ -219,9 +219,9 @@ class Model extends EloquentModel
      * @return boolean|number
      */
     public static function getRecordCountCondition($where = []){
-        if(empty($where)){
-            return false;
-        }
+//        if(empty($where)){
+//            return false;
+//        }
 
         $record = self::query();
 
@@ -253,9 +253,9 @@ class Model extends EloquentModel
      * @return boolean|number
      */
     public static function getRecordCountDistinct($where = []){
-        if(empty($where)){
-            return false;
-        }
+//        if(empty($where)){
+//            return false;
+//        }
 
         $record = static::query();
 
@@ -274,9 +274,9 @@ class Model extends EloquentModel
      * @return bool|\Illuminate\Database\Eloquent\Collection|static[]
      */
     public static function getRecordListCondition($where = [],$columns = ['*'],$order_by = [],$page = 0,$pageSize = 0){
-        if(empty($where)){
-            return false;
-        }
+//        if(empty($where)){
+//            return false;
+//        }
 
         $record = self::query();
 
