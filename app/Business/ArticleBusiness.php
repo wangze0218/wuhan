@@ -41,6 +41,22 @@ class ArticleBusiness
             $page,
             $page_size
         );
+        // 1产品与服务，2案例，3新闻
+        if(!empty($list['data'])){
+            foreach ($list['data'] as $k=>$v){
+                switch ($v->article_type){
+                    case 1:
+                        $list['data'][$k]->article_type_name = '产品与服务';
+                        break;
+                    case 2:
+                        $list['data'][$k]->article_type_name = '案例';
+                        break;
+                    case 3:
+                        $list['data'][$k]->article_type_name = '新闻';
+                        break;
+                }
+            }
+        }
         $list['count'] = ArticleModel::getRecordCountCondition(
             $where,
             ['article_id','title','title_img','title_describe','article_type'],

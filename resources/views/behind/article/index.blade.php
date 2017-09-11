@@ -15,6 +15,7 @@
                 <thead>
                 <tr>
                     <th><i class="icon-bullhorn"></i> 序号</th>
+                    <th class="hidden-phone"><i class="icon-question-sign"></i> 文章类型</th>
                     <th class="hidden-phone"><i class="icon-question-sign"></i> 文章标题</th>
                     <th><i class=" icon-tasks"></i> 文章标题图片</th>
                     <th><i class=" icon-edit"></i> 文章标题详情</th>
@@ -26,6 +27,7 @@
                         @foreach($list['data'] as $k=>$v)
                             <tr>
                                 <td><a href="#">{{$k+1}}</a></td>
+                                <td>{{$v->article_type_name}}</td>
                                 <td>{{$v->title}}</td>
                                 <td><img style="width: 100px;height: 30px;" src="{{$v->title_img}}" alt=""></td>
                                 <td>{{$v->title_describe}}</td>
