@@ -28,12 +28,16 @@ class ArticleController
 
     public function index(Request $request)
     {
-        $where = [];
+        $in = $request->all();
+        $article_type = empty($in['article_type'])?1:$in['article_type'];
+        $where = [
+            'article_type'=>$article_type
+        ];
         $page = 1;
         $page_size = 15;
-        $list = $this->articleBusiness->articleList($where,$page,$page_size);
+        $list = $this->articleBusiness->articleList($where,$page,$page_size,['updated_at'=>'desc']);
         $page_num = ceil($list['count']/$page_size);
-        return view('behind.article.index',['list'=>$list,'page_num'=>$page_num]);
+        return view('behind.article.index',['list'=>$list,'page_num'=>$page_num,'search'=>$where]);
     }
 
     public function create(Request $request)
@@ -60,9 +64,7 @@ class ArticleController
     public function edit($id)
     {
         $article = $this->articleBusiness->article($id);
-//        $article->content = htmlspecialchars_decode($article->content);
-//        dd($article->content);
-        $article->content = "<p>121 但是是否</p>";
+        $article->content = htmlspecialchars_decode($article->content);
         return view('behind.article.edit',['article'=>$article]);
     }
 
@@ -78,7 +80,7 @@ class ArticleController
             $title_img = $file->boot($path,$extension);
         }
         if(isset($in['editorValue'])) $content = $in['editorValue'];
-        $article = $this->articleBusiness->articleCreate($in['title'],$title_img,$in['title_describe'],$content,$in['article_type']);
+        $article = $this->articleBusiness->articleUpdate($id,$in['title'],$title_img,$in['title_describe'],$content,$in['article_type']);
         return $this->_response(10000,'请求成功',$article);
     }
 

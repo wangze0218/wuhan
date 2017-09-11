@@ -23,9 +23,7 @@ Route::get('/cooperative_partner', function () {
     return view('front.cooperative_partner');
 });
 
-Route::get('/service', function () {
-    return view('front.service');
-});
+Route::get('/service', 'Front\FrontController@service');
 
 Route::get('news_center',function (){
     return view('front.news_center');

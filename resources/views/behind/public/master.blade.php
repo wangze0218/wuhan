@@ -10,7 +10,7 @@
 
     <title>FlatLab - Flat & Responsive Bootstrap Admin Template</title>
     @include('behind.public.style')
-
+    @yield('style')
     <script src="{{asset('FlatLab/js/html5shiv.js')}}"></script>
     <script src="{{asset('FlatLab/js/respond.min.js')}}"></script>
     <script>
@@ -39,7 +39,7 @@
                     success: function(data) {
                         if(data.code == 10000){
                             var index = $('.delete').index(self);
-                            $('tr').eq(index).remove();
+                            location.reload();
                         }else{
                             alert('删除失败');
                         }

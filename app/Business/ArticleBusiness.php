@@ -32,12 +32,12 @@ class ArticleBusiness
     }
 
     //$where = [],$columns = ['*'],$order_by = [],$page = 0,$pageSize = 0
-    public function articleList($where,$page,$page_size)
+    public function articleList($where,$page,$page_size,$order_by=[])
     {
         $list['data'] = ArticleModel::getRecordListCondition(
             $where,
             ['article_id','title','title_img','title_describe','article_type'],
-            ['updated_at'=>'desc'],
+            $order_by,
             $page,
             $page_size
         );
@@ -65,5 +65,17 @@ class ArticleBusiness
             $page_size
         );
         return $list;
+    }
+
+    public function articleUpdate($id,$title,$title_img,$title_describe,$content,$article_type)
+    {
+        $article = ArticleModel::updateRecordORM($id,[
+            'title'=>$title,
+            'title_img'=>$title_img,
+            'title_describe'=>$title_describe,
+            'content'=>$content,
+            'article_type'=>$article_type,
+        ]);
+        return $article;
     }
 }
