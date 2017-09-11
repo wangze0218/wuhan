@@ -53,8 +53,7 @@
                         </div>
                         <div class="form-group">
                             <div class="container">
-                                <div class="" id="editor_hidden">{{$article->content}}</div>
-                                <script id="editor" type="text/plain" style="width:1024px;height:500px;"></script>
+                                <script id="editor" type="text/plain" style="width:1024px;height:500px;">{!! $article->content !!}</script>
                             </div>
                         </div>
                         <button type="submit" class="btn btn-default btn-lg btn-block">提交文章</button>
@@ -69,14 +68,6 @@
     <script type="text/javascript">
         //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
         var ue = UE.getEditor('editor');
-        $(function(){
-            window.setTimeout(setContent,1000);//一秒后再调用赋值方法
-        });
-
-        //给ueditor插入值
-        function setContent(){
-            UE.getEditor('editor').execCommand('insertHtml', $('#editor_hidden').html());
-        }
 
     </script>
 

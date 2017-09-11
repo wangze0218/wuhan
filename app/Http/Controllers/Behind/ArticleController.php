@@ -60,7 +60,9 @@ class ArticleController
     public function edit($id)
     {
         $article = $this->articleBusiness->article($id);
-        $article->content = htmlspecialchars_decode($article->content);
+//        $article->content = htmlspecialchars_decode($article->content);
+//        dd($article->content);
+        $article->content = "<p>121 但是是否</p>";
         return view('behind.article.edit',['article'=>$article]);
     }
 
