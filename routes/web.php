@@ -24,14 +24,8 @@ Route::get('/cooperative_partner', function () {
 });
 
 Route::get('/service', 'Front\FrontController@service');
-
-Route::get('news_center',function (){
-    return view('front.news_center');
-});
-
-Route::get('solution',function (){
-    return view('front.solution');
-});
+Route::get('/solution','Front\FrontController@solution');
+Route::get('/news_center','Front\FrontController@news_center');
 
 //
 //========================================================================================================

@@ -32,7 +32,7 @@ class ArticleBusiness
     }
 
     //$where = [],$columns = ['*'],$order_by = [],$page = 0,$pageSize = 0
-    public function articleList($where,$page,$page_size,$order_by=[])
+    public function articleList($where,$page,$page_size = 15,$order_by=[])
     {
         $list['data'] = ArticleModel::getRecordListCondition(
             $where,
@@ -60,10 +60,12 @@ class ArticleBusiness
         $list['count'] = ArticleModel::getRecordCountCondition(
             $where,
             ['article_id','title','title_img','title_describe','article_type'],
-            ['updated_at'=>'desc'],
-            $page,
-            $page_size
+            ['updated_at'=>'desc']
         );
+        if($page && $page_size){
+            $list['page_num'] = ceil($list['count']/$page_size);
+            $list['page'] = $page;
+        }
         return $list;
     }
 

@@ -19,11 +19,63 @@ class FrontController
         $this->articleBusiness = $articleBusiness;
     }
 
-    public function service()
+    public function service(Request $request)
     {
-        $articles = $this->articleBusiness->articleList(['article_type'=>1],0,0,['article_id'=>'desc']);
+        $in = $request->all();
+        $page = empty($in['page'])?1:$in['page'];
+        $articles = $this->articleBusiness->articleList(['article_type'=>1],1,15,['article_id'=>'desc']);
+        $page_num = $articles['page_num'];
         $articles = $articles['data']->toArray();
-        return view('front.service',['articles'=>$articles]);
+        $page_view = $this->page_view($page,$page_num,'/solution/');
+        return view('front.service',[
+            'articles'=>$articles,
+            'page_view'=>$page_view,
+        ]);
+    }
+
+    public function solution(Request $request)
+    {
+        $in = $request->all();
+        $page = empty($in['page'])?1:$in['page'];
+        $articles = $this->articleBusiness->articleList(['article_type'=>2],1,15,['article_id'=>'desc']);
+        $page_num = $articles['page_num'];
+        $articles = $articles['data']->toArray();
+        $page_view = $this->page_view($page,$page_num,'/solution/');
+        return view('front.solution',[
+            'articles'=>$articles,
+            'page_view'=>$page_view,
+        ]);
+    }
+
+    public function news_center(Request $request)
+    {
+        $in = $request->all();
+        $page = empty($in['page'])?1:$in['page'];
+        $articles = $this->articleBusiness->articleList(['article_type'=>3],1,15,['article_id'=>'desc']);
+        $page_num = $articles['page_num'];
+        $articles = $articles['data']->toArray();
+        $page_view = $this->page_view($page,$page_num,'/solution/');
+        return view('front.news_center',[
+            'articles'=>$articles,
+            'page_view'=>$page_view,
+        ]);
+    }
+
+    private function page_view($page,$page_num,$url)
+    {
+        $previous_url = ($page == 1)?'#':$url.$page-1;
+        $next_url = ($page == $page_num)?'#':$url.$page+1;
+        $str = "<div class=\"row\">
+                <div class=\"bs-example\" data-example-id=\"simple-pager\">
+                    <nav aria-label=\"...\" class=\"page\">
+                        <ul class=\"pager\">
+                            <li><a href=".$previous_url.">上一页</a></li>
+                            <li><a href=".$next_url.">下一页</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>";
+        return $str;
     }
 
 

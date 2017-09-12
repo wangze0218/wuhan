@@ -66,70 +66,24 @@
                 <h1>解决方案</h1>
             </div>
             <div class="row">
-                {{--<div class="col-md-2">--}}
-                    {{--<div class="shadow">--}}
-                        {{--<a class="list-group-item disabled" href="">大数据热门文章</a>--}}
-                        {{--<a class="list-group-item"  href="">2</a>--}}
-                        {{--<a class="list-group-item"  href="">2</a>--}}
-                        {{--<a class="list-group-item"  href="">2</a>--}}
-                        {{--<a class="list-group-item"  href="">2</a>--}}
-                    {{--</div>--}}
-
-                {{--</div>--}}
                 <div class="col-md-12 shadow">
                     <div class="group-list" style="padding: 0px 30px;background-color: #ddd">
-                        <h2 style="border-bottom: solid 1px #d7d7d7;padding: 30px 0px">九次方大数据核心业务</h2>
+                        <h2 style="border-bottom: solid 1px #d7d7d7;padding: 30px 0px">华云数海（大数据）核心业务</h2>
                     </div>
-
-                    <div class="media col-md-6 ">
-                        <div class="media-body">
-                            {{--<h3 class="media-heading">苏黎世 (瑞士)</h3>--}}
-                            <p class="p1">1.政府融合共享、开放、应用大数据
-                            </p>
-                            <p class="p2">借助大数据技术完成数据集成、融合，打破中央与地方政府之间、政府各下属机构之间、政府部门和垂直行业之间的数据壁垒，实现信息共享、业务协同、智能决策。
-
-                            {{--<a href="/shop/zh_CN/inspiration/free-warehouse" title="更多信息" class="link-style">更多信息</a>--}}
+                    @foreach($articles as $k=>$v)
+                        <div class="media col-md-6 ">
+                            <a href="" style="color: #333">
+                                <div class="media-body">
+                                    <p class="p1">{{$k+1}}.{{$v['title']}}</p>
+                                    <p class="p2">{{$v['title_describe']}}</p>
+                                </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class="media col-md-6">
-                        <div class="media-body">
-                            {{--<h3 class="media-heading">苏黎世 (瑞士)</h3>--}}
-                            <p class="p1">2.社会信用大数据</p>
-                            <p class="p2">借助大数据技术完成数据集成、融合，打破中央与地方政府之间、政府各下属机构之间、政府部门和垂直行业之间的数据壁垒，实现信息共享、业务协同、智能决策。  </p>
-                            {{--<a href="/shop/zh_CN/inspiration/free-warehouse" title="更多信息" class="link-style">更多信息</a>--}}
-                        </div>
-                    </div>
-                    <div class="media col-md-6 ">
-                        <div class="media-body">
-                            {{--<h3 class="media-heading">苏黎世 (瑞士)</h3>--}}
-                            <p class="p1">1.政府融合共享、开放、应用大数据
-                            </p>
-                            <p class="p2">借助大数据技术完成数据集成、融合，打破中央与地方政府之间、政府各下属机构之间、政府部门和垂直行业之间的数据壁垒，实现信息共享、业务协同、智能决策。
-
-                            {{--<a href="/shop/zh_CN/inspiration/free-warehouse" title="更多信息" class="link-style">更多信息</a>--}}
-                        </div>
-                    </div>
-                    <div class="media col-md-6">
-                        <div class="media-body">
-                            {{--<h3 class="media-heading">苏黎世 (瑞士)</h3>--}}
-                            <p class="p1">2.社会信用大数据</p>
-                            <p class="p2">借助大数据技术完成数据集成、融合，打破中央与地方政府之间、政府各下属机构之间、政府部门和垂直行业之间的数据壁垒，实现信息共享、业务协同、智能决策。  </p>
-                            {{--<a href="/shop/zh_CN/inspiration/free-warehouse" title="更多信息" class="link-style">更多信息</a>--}}
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
 
             </div>
-            <div class="row">
-                <div class="bs-example" data-example-id="simple-pager">
-                    <nav aria-label="..." class="page">
-                        <ul class="pager">
-                            <li><a href="#">上一页</a></li>
-                            <li><a href="#">下一页</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            {!! $page_view !!}
         </div>
     </div>
 @endsection
