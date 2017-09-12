@@ -12,11 +12,6 @@
         .about-us p{
             padding-top: 15px;
         }
-        .shadow img{
-            vertical-align: middle;
-            border: 1px solid white;
-            box-shadow: 0 6px 30px -10px rgba(0, 0, 0, .6)!important;
-        }
         .about-us-partner{
             padding: 50px 0px;
         }
