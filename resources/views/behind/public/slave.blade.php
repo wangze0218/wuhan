@@ -76,7 +76,6 @@
                     alert("Connection error");
                 },
                 success: function(data) {
-                    console.log(data);
                     if(data.code != 10000){
                         alert(data.msg);
                     }else{
@@ -99,7 +98,6 @@
                     alert("Connection error");
                 },
                 success: function(data) {
-                    console.log(data);
                     if(data.code != 10000){
                         alert(data.msg);
                     }else{

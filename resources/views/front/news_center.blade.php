@@ -116,7 +116,7 @@
                     @foreach($articles as $k=>$v)
                         <div class="media shadow">
                             <div class="media-left">
-                                <a href="#">
+                                <a href="/details/{{$v['article_id']}}">
                                     <img class="media-object" data-src="holder.js/100X100" alt="64x64" src="{{$v['title_img']}}"
                                          data-holder-rendered="true" style="width: 250px; height: 196px;">
                                 </a>

@@ -72,7 +72,7 @@
                     </div>
                     @foreach($articles as $k=>$v)
                         <div class="media col-md-6 ">
-                            <a href="" style="color: #333">
+                            <a href="/details/{{$v['article_id']}}" style="color: #333">
                                 <div class="media-body">
                                     <p class="p1">{{$k+1}}.{{$v['title']}}</p>
                                     <p class="p2">{{$v['title_describe']}}</p>

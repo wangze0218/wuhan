@@ -61,6 +61,15 @@ class FrontController
         ]);
     }
 
+    public function details(Request $request,$id)
+    {
+        $in = $request->all();
+        $articles = $this->articleBusiness->article($id);
+        return view('front.details',[
+            'articles'=>$articles,
+        ]);
+    }
+
     private function page_view($page,$page_num,$url)
     {
         $previous_url = ($page == 1)?'#':$url.$page-1;

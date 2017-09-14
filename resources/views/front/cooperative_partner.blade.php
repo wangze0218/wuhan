@@ -8,7 +8,7 @@
         }
         .about-us h1{
             padding: 30px 0px;
-        }
+        }details
         .about-us p{
             padding-top: 15px;
         }

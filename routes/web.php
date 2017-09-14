@@ -26,6 +26,7 @@ Route::get('/cooperative_partner', function () {
 Route::get('/service', 'Front\FrontController@service');
 Route::get('/solution','Front\FrontController@solution');
 Route::get('/news_center','Front\FrontController@news_center');
+Route::get('/details/{id}','Front\FrontController@details');
 
 //
 //========================================================================================================

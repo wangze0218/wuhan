@@ -49,7 +49,9 @@
                 @foreach($articles as $k=>$v)
                     <div class="col-md-4">
                         <div class="thumbnail">
-                            <img data-src="holder.js/100%x200" alt="100%x200" src="{{$v['title_img']}}" data-holder-rendered="true" style="height: 320px; width: 320px; display: block;">
+                            <a href="/details/{{$v['article_id']}}">
+                                <img data-src="holder.js/100%x200" alt="100%x200" src="{{$v['title_img']}}" data-holder-rendered="true" style="height: 320px; width: 320px; display: block;">
+                            </a>
                             <div class="caption">
                                 <p>{{$v['title']}}</p>
                                 <p></p>
