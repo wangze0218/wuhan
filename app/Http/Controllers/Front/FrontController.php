@@ -61,6 +61,20 @@ class FrontController
         ]);
     }
 
+    public function company_dynamics(Request $request)
+    {
+        $in = $request->all();
+        $page = empty($in['page'])?1:$in['page'];
+        $articles = $this->articleBusiness->articleList(['article_type'=>4],1,15,['article_id'=>'desc']);
+        $page_num = $articles['page_num'];
+        $articles = $articles['data']->toArray();
+        $page_view = $this->page_view($page,$page_num,'/solution/');
+        return view('front.company_dynamics',[
+            'articles'=>$articles,
+            'page_view'=>$page_view,
+        ]);
+    }
+
     public function details(Request $request,$id)
     {
         $in = $request->all();

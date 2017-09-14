@@ -14,7 +14,7 @@
         <section class="panel">
             <div class="select row col-sm-12 panel-heading">
                 <div class="col-md-2  pull-left">
-                    用户列表
+                    文章列表
                 </div>
                 <form action="/behind/article" method="get">
                     <div class="col-md-1 pull-right">
@@ -24,7 +24,8 @@
                         <select class="colorpicker-default form-control" name="article_type" id="">
                             <option @if($search['article_type'] == 1) selected @endif value="1">产品与服务</option>
                             <option @if($search['article_type'] == 2) selected @endif  value="2">案例</option>
-                            <option @if($search['article_type'] == 3) selected @endif  value="3">新闻</option>
+                            <option @if($search['article_type'] == 3) selected @endif  value="3">行业新闻</option>
+                            <option @if($search['article_type'] == 4) selected @endif  value="4">本公司的动态</option>
                         </select>
                     </div>
 

@@ -9,7 +9,7 @@
     }
     header .navbar-default{
         background-color: #FFFFFF;
-        overflow: hidden;
+        /*overflow: hidden;*/
     }
     header nav{
         height: 70px;
@@ -46,20 +46,15 @@
                             <li ><a href="/">首页</a></li>
                             <li class="active"><a href="/service">产品与服务</a></li>
                             <li><a href="/solution">解决方案</a></li>
-                            <li><a href="/news_center">新闻中心</a></li>
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">新闻中心<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/news_center">行业新闻</a></li>
+                                    <li><a href="/company_dynamics">本公司动态</a></li>
+                                </ul>
+                            </li>
                             <li><a href="/cooperative_partner">合作伙伴</a></li>
                             <li><a href="/about_us">关于我们</a></li>
-                            {{--<li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="/about_us">关于我们 <b class="caret"></b></a>--}}
-                                {{--<ul class="dropdown-menu">--}}
-                                    {{--<li><a href="#">下拉导航1</a></li>--}}
-                                    {{--<li><a href="#">下拉导航2</a></li>--}}
-                                    {{--<li><a href="#">其他</a></li>--}}
-                                    {{--<li class="divider"></li>--}}
-                                    {{--<li class="nav-header">标签</li>--}}
-                                    {{--<li><a href="#">链接1</a></li>--}}
-                                    {{--<li><a href="#">链接2</a></li>--}}
-                                {{--</ul>--}}
-                            {{--</li>--}}
                         </ul>
                 </div>
                 <div class="col-xs-2 navbar-login">

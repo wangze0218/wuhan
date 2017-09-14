@@ -72,7 +72,7 @@
     <div class="container-fluid">
         <div class="container">
             <div class="page-title">
-                <h1>行业新闻</h1>
+                <h1>本公司动态</h1>
             </div>
             <div class="row">
                 <div class="col-md-9  news-list">
