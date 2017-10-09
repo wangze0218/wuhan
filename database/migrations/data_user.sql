@@ -28,5 +28,5 @@ CREATE TABLE `data_user` (
   `updated_at` int(11) NOT NULL,
   `deleted_at` int(11) DEFAULT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 SET FOREIGN_KEY_CHECKS=1;

@@ -39,11 +39,13 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
                 <div class="navbar-logo col-xs-3">
-                        <a class="navbar-brand" href="http://www.zaarapp.com/"><img src="http://www.zaarapp.com/assets/images/Logo.png" title="ZAAR APP" alt="ZAAR APP"></a>
+                        <a class="navbar-brand" href="/">
+                            <img src="/img/huayunshuhai.png" title="ZAAR APP" alt="ZAAR APP">
+                        </a>
                 </div>
                 <div class="navbar-list col-xs-7 hidden-xs">
                         <ul class="nav pull-right" >
-                            <li ><a href="/">首页</a></li>
+                            <li ><a href="/">首页</a><span class="sr-only">(current)</span></li>
                             <li class="active"><a href="/service">产品与服务</a></li>
                             <li><a href="/solution">解决方案</a></li>
                             <li class="dropdown">
