@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>华云数海</title>
     @include('front.public.style')
+    <style>
+        html,body{
+            height:100%;
+        }
+    </style>
     @yield('style')
     @include('front.public.script')
 </head>
