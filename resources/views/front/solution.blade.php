@@ -1,8 +1,8 @@
 @extends('front.public.master')
 @section('script')
     <style>
-        body{
-            /*background-color: #f2f2f2;*/
+        .container-fluid{
+            margin-top: 66px;
         }
         .page-title{
             margin: 40px 0px;
@@ -57,6 +57,15 @@
         .bs-example{
             margin: 50px 0px;
         }
+        @media (min-width: 768px){
+
+        }
+        @media screen and (max-width: 768px){
+            .shadow{
+                box-shadow: 0 0px 0px 0px rgba(0, 0, 0, .6)!important;
+            }
+        }
+
     </style>
 @endsection
 @section('content')

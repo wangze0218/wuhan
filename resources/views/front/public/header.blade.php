@@ -63,7 +63,6 @@
             margin-top: 15px;
         }
     }
-
     .shadow{
         vertical-align: middle;
         border: 1px solid white;

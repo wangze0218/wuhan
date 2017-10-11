@@ -168,7 +168,7 @@
                 <p>洞察<br>企业<br>数据</p>
                 {{--<p><br>数据<br></p>--}}
                 {{--<p></p>--}}
-                <a href="#services" class="scrollto"><p><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></p></a>
+                <a href="#home-details" class="scrollto"><p><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></p></a>
             </div>
         </div>
     </div>
@@ -183,7 +183,7 @@
     {{--pc页面描述结束--}}
     {{--pc和手机详情模块--}}
     {{--pc和手机详情模块结束--}}
-    <div class="container-fluid home-details">
+    <div id="home-details" class="container-fluid home-details">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6">

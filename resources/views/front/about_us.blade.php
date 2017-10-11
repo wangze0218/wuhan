@@ -1,6 +1,9 @@
 @extends('front.public.master')
 @section('script')
     <style>
+        .container-fluid{
+            margin-top: 66px;
+        }
         .about-us{
             height: 500px;
             color: #fff;
@@ -34,6 +37,15 @@
         }
         .text-grey{
             color:#777;
+        }
+        @media screen and (max-width: 768px) {
+            .shadow {
+                box-shadow: 0 0px 0px 0px rgba(0, 0, 0, .6) !important;
+            }
+
+            .about-us {
+                display: none;
+            }
         }
     </style>
 @endsection

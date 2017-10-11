@@ -10,6 +10,7 @@
         html,body{
             height:100%;
         }
+
     </style>
     @yield('style')
     @include('front.public.script')

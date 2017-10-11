@@ -1,27 +1,65 @@
 @extends('front.public.master')
 @section('script')
     <style>
-        .about-us{
-            height: 500px;
-            color: #fff;
-            background-image: url('https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/page1_bg.jpg');
+        .container-fluid{
+            margin-top: 66px;
         }
-        .about-us h1{
-            padding: 30px 0px;
-        }details
-        .about-us p{
-            padding-top: 15px;
+        @media (min-width: 768px){
+            .about-us{
+                /*height: 500px;*/
+                color: #fff;
+                background-image: url('https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/page1_bg.jpg');
+            }
+            .about-us h1{
+                padding: 30px 0px;
+            }
+            .about-us p{
+                padding-top: 15px;
+            }
+            .cooperative_partner{
+                padding: 50px 0px;
+            }
+            .about-us-partner{
+                /*padding: 50px 0px;*/
+            }
+            .about-us-partner-img{
+                margin: 50px 0px;
+            }
+            .border{
+                border-top:1px solid #eee ;
+            }
         }
-        .about-us-partner{
-            padding: 50px 0px;
+        @media screen and (max-width: 768px){
+            .shadow{
+                box-shadow: 0 0px 0px 0px rgba(0, 0, 0, .6)!important;
+            }
+            .about-us{
+                display: none;
+                height: 100%;
+                color: #fff;
+                background: url('https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/page1_bg.jpg') no-repeat;
+            }
+            .cooperative_partner{
+                padding: 66px 0px;
+                height: 100%;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .about-us-partner-img{
+                height:40%;
+                padding: 40px 0px;
+            }
+            .about-us-partner-img div{
+                padding: 3px 0px;
+            }
+            .about-us-partner-img img{
+                width: 100%;
+            }
+            .border{
+                border-top:1px solid #eee ;
+            }
         }
-        .about-us-partner-img{
-            margin: 50px 0px;
-        }
-        .border{
-            border-top:1px solid #eee ;
-            /*background-color: #e6e6e6;*/
-        }
+
 
     </style>
 @endsection
@@ -49,43 +87,39 @@
         </div>
     </div>
 
-    <div class="container-fluid  ">
-        <div class="container border about-us-partner text-center">
-            <div class="row">
+    <div class="container cooperative_partner border">
+        <div class="row about-us-partner text-center">
                 <div class="col-xs-12">
                     <h1 class="text-center">
                         合作伙伴
                     </h1>
                 </div>
-            </div>
         </div>
-        <div class="container about-us-partner">
-            <div class="row about-us-partner-img">
-                <div class="col-md-3 col-xs-6 shadow">
-                    <img src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/huoban.jpg">
+        <div class="row about-us-partner">
+            <div class="col-xs-12 about-us-partner-img">
+                <div class="col-xs-6 col-md-3 ">
+                    <img class="shadow" src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/huoban.jpg">
                 </div>
-                <div class="col-md-3 col-xs-6 shadow">
-                    <img src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/hiwork.jpg">
+                <div class="col-md-3 col-xs-6 ">
+                    <img class="shadow" src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/hiwork.jpg">
                 </div>
-                <div class="col-md-3 col-xs-6 shadow">
-                    <img src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/mingdao.jpg">
+                <div class="col-md-3 col-xs-6 ">
+                    <img class="shadow" src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/mingdao.jpg">
                 </div>
-                <div class="col-md-3 col-xs-6 shadow">
-                    <img src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/yuncaiwu.jpg">
+                <div class="col-md-3 col-xs-6 ">
+                    <img class="shadow" src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/yuncaiwu.jpg">
                 </div>
-            </div>
-            <div class="row about-us-partner-img">
-                <div class="col-md-3 col-xs-6 shadow">
-                    <img src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/lingxin.jpg">
+                <div class="col-md-3 col-xs-6 ">
+                    <img class="shadow" src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/lingxin.jpg">
                 </div>
-                <div class="col-md-3 col-xs-6 shadow">
-                    <img src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/jinshuju.jpg">
+                <div class="col-md-3 col-xs-6 ">
+                    <img class="shadow" src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/jinshuju.jpg">
                 </div>
-                <div class="col-md-3 col-xs-6 shadow">
-                    <img src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/aliyun.jpg">
+                <div class="col-md-3 col-xs-6 ">
+                    <img class="shadow" src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/aliyun.jpg">
                 </div>
-                <div class="col-md-3 col-xs-6 shadow">
-                    <img src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/yiqixie.jpg">
+                <div class="col-md-3 col-xs-6 ">
+                    <img class="shadow" src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/yiqixie.jpg">
                 </div>
             </div>
         </div>
