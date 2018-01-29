@@ -81,7 +81,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="">
-                    <img src="/img/huayunshuhai.png" title="ZAAR APP" alt="ZAAR APP">
+                    <img src="/img/huayunshuhai.png" title="华云数海" alt="华云数海" style="width: 100%;height: 65px;">
                 </a>
             </div>
             <div class="collapse navbar-collapse col-sm-7" id="bs-example-navbar-collapse-1">
