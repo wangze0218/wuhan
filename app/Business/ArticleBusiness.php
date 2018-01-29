@@ -13,9 +13,12 @@ use App\System\ResponseException;
 
 class ArticleBusiness
 {
+    private $img_url = "http://img.selfgrowth.cn";
+
     public function article($article_id)
     {
         $article = ArticleModel::find($article_id);
+        $article->title_img = $this->img_url.$article->title_img;
         return $article;
     }
 
@@ -41,6 +44,9 @@ class ArticleBusiness
             $page,
             $page_size
         );
+        foreach ($list['data'] as $k=>$v){
+            $list['data'][$k]->title_img = $this->img_url.$list['data'][$k]->title_img;
+        }
         // 1产品与服务，2案例，3新闻
         if(!empty($list['data'])){
             foreach ($list['data'] as $k=>$v){
