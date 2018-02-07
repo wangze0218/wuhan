@@ -42,6 +42,11 @@
             margin-top: 17px;
             margin-right: 23px;
         }
+        .navbar-brand img{
+            height: 60px;
+            width: 305px;
+            margin-left: 16px;
+        }
     }
     @media (min-width: 768px){
         header .navbar .nav>li {
@@ -62,6 +67,9 @@
         .navbar-login a{
             margin-top: 15px;
         }
+        .navbar-brand img{
+            width: 100%;height: 65px;
+        }
     }
     .shadow{
         vertical-align: middle;
@@ -81,7 +89,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="">
-                    <img src="/img/huayunshuhai.png" title="华云数海" alt="华云数海" style="width: 100%;height: 65px;">
+                    <img src="/img/huayunshuhai.png" title="华云数海" alt="华云数海" style="">
                 </a>
             </div>
             <div class="collapse navbar-collapse col-sm-7" id="bs-example-navbar-collapse-1">
