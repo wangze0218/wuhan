@@ -5,9 +5,9 @@
         <div class="col-md-12">
             <section class="panel">
                 <div class="panel-body">
-                    <form action="/behind/article/{{$article->article_id}}" role="form" id="from" method = 'post' onsubmit="return update('/behind/article/{{$article->article_id}}');" enctype="multipart/form-data" class="form-horizontal tasi-form">
+                    <form action="/behind/article/{{$article->article_id}}" onsubmit="return update('/behind/article/{{$article->article_id}}');" role="form" id="from" method = 'post'  enctype="multipart/form-data" class="form-horizontal tasi-form">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                        {{--<input type="hidden" name="_method" value="PUT">--}}
+                        <input type="hidden" name="_method" value="PUT">
                         <div class="form-group">
                             <label class="control-label col-md-3">文章类型</label>
                             <div class="col-md-4">
