@@ -14,7 +14,7 @@ use App\System\ResponseException;
 class FileBusiness
 {
     private $old_file_path;
-    private $new_file_path = '/var/www/update_file';
+    private $new_file_path = '/var/www/update_file/img';
     private $extension;
 
     public function __construct()
