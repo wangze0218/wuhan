@@ -14,7 +14,7 @@
                 height: 100%;
                 overflow: hidden;
                 margin-top: 50px;
-                background:url('http://www.zaarapp.com/assets/images/b2.png') center top ;
+                /*background:url('http://www.zaarapp.com/assets/images/b2.png') center top ;*/
                 /*-webkit-background-size:100% 100%;*/
                 /*background-size:100% 100%;*/
             }
@@ -144,11 +144,11 @@
                         探索企业发展
                     </p>
                 </div>
-                <img alt="" src="http://www.zaarapp.com/assets/images/b2.png" />
+                <img alt="" src="http://img.selfgrowth.cn/home/bg1.png" />
 
             </div>
             <div class="item">
-                <img alt="" src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/product/product_banner.jpg" />
+                <img alt="" src="http://img.selfgrowth.cn/home/bg2.jpg" />
                 <div class="carousel-caption">
                     <h2>
                         互联网、大数据时代
@@ -187,7 +187,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
-                    <img src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/product/2_1.png" alt="">
+                    <img src="http://img.selfgrowth.cn/home/2_1.png" alt="">
                 </div>
                 <div class="col-xs-12 col-sm-6">
                     <dl>
@@ -226,7 +226,7 @@
                     </dl>
                 </div>
                 <div class="col-xs-12 col-sm-6">
-                    <img src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/product/2_2.png" alt="">
+                    <img src="http://img.selfgrowth.cn/home/2_2.png" alt="">
                 </div>
             </div>
         </div>
@@ -235,7 +235,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
-                    <img src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/product/2_3.png" alt="">
+                    <img src="http://img.selfgrowth.cn/home/2_3.png" alt="">
                 </div>
                 <div class="col-xs-12 col-sm-6">
                     <dl>
@@ -279,7 +279,7 @@
                     </dl>
                 </div>
                 <div class="col-xs-12 col-sm-6">
-                    <img src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/product/2_4.png" alt="">
+                    <img src="http://img.selfgrowth.cn/home/2_4.png" alt="">
                 </div>
             </div>
         </div>

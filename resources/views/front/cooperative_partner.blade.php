@@ -8,7 +8,7 @@
             .about-us{
                 /*height: 500px;*/
                 color: #fff;
-                background-image: url('https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/page1_bg.jpg');
+                background-image: url('http://img.selfgrowth.cn/cooperative/bg1.jpg');
             }
             .about-us h1{
                 padding: 30px 0px;
@@ -37,7 +37,7 @@
                 display: none;
                 height: 100%;
                 color: #fff;
-                background: url('https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/page1_bg.jpg') no-repeat;
+                background: url('http://img.selfgrowth.cn/cooperative/bg1.jpg') no-repeat;
             }
             .cooperative_partner{
                 padding: 66px 0px;
@@ -98,28 +98,28 @@
         <div class="row about-us-partner">
             <div class="col-xs-12 about-us-partner-img">
                 <div class="col-xs-6 col-md-3 ">
-                    <img class="shadow" src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/huoban.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_1.jpg">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/hiwork.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_2.jpg">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/mingdao.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_3.jpg">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/yuncaiwu.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_4.jpg">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/lingxin.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_5.jpg">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/jinshuju.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_6.jpg">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/aliyun.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_7.jpg">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="https://sjg-portal.oss-cn-beijing.aliyuncs.com/assets/img/about/yiqixie.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_8.jpg">
                 </div>
             </div>
         </div>
