@@ -99,7 +99,7 @@
                     <div class="col-xs-6 col-sm-4">
                         <div class="thumbnail">
                             <a href="/details/{{$v['article_id']}}">
-                                <img data-src="holder.js/100%x200" src="http://img.selfgrowth.cn/weixin.png" alt="100%x200" src="{{$v['title_img']}}" data-holder-rendered="true">
+                                <img data-src="holder.js/100%x200" alt="100%x200" src="{{$v['title_img']}}" data-holder-rendered="true">
                             </a>
                             <div class="caption">
                                 <p>{{$v['title']}}</p>
