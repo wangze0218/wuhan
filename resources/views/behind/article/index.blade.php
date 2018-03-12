@@ -8,7 +8,7 @@
 @section('content')
     <div class="col-lg-12">
         <section class="form-group">
-                <a type="button" onclick="return addOrEdit('/behind/article/create','文章添加',['1200px','600px']);"  class="btn btn-primary">添加文章</a>
+                <a type="button" onclick="return addOrEdit('/behind/article/create?article_type={{$search['article_type']}}','文章添加',['1200px','600px']);"  class="btn btn-primary">添加文章</a>
         </section>
 
         <section class="panel">

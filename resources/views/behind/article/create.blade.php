@@ -11,10 +11,10 @@
                             <label class="control-label col-md-3">文章类型</label>
                             <div class="col-md-4">
                                 <select class="colorpicker-default form-control" name="article_type" id="">
-                                    <option value="1">产品与服务</option>
-                                    <option value="2">案例</option>
-                                    <option value="3">新闻</option>
-                                    <option value="4">公司动态</option>
+                                    <option @if($search['article_type'] == 1) selected @endif value="1">产品与服务</option>
+                                    <option @if($search['article_type'] == 2) selected @endif  value="2">案例</option>
+                                    <option @if($search['article_type'] == 3) selected @endif  value="3">行业新闻</option>
+                                    <option @if($search['article_type'] == 4) selected @endif  value="4">本公司的动态</option>
                                 </select>
                             </div>
                         </div>

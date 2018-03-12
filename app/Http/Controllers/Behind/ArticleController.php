@@ -42,7 +42,12 @@ class ArticleController
 
     public function create(Request $request)
     {
-        return view('behind.article.create');
+        $in = $request->all();
+        $article_type = empty($in['article_type'])?1:$in['article_type'];
+        $where = [
+            'article_type'=>$article_type
+        ];
+        return view('behind.article.create',['search'=>$where]);
     }
 
     public function store(Request $request)
