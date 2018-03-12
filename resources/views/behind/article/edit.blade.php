@@ -15,6 +15,7 @@
                                     <option @if($article->article_type == 1) selected @endif value="1">产品与服务</option>
                                     <option @if($article->article_type == 2) selected @endif value="2">案例</option>
                                     <option @if($article->article_type == 3) selected @endif value="3">新闻</option>
+                                    <option @if($article->article_type == 4) selected @endif value="4">公司动态</option>
                                 </select>
                             </div>
                         </div>

@@ -14,6 +14,7 @@
                                     <option value="1">产品与服务</option>
                                     <option value="2">案例</option>
                                     <option value="3">新闻</option>
+                                    <option value="4">公司动态</option>
                                 </select>
                             </div>
                         </div>
