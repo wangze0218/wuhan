@@ -8,7 +8,7 @@
             .about-us{
                 /*height: 500px;*/
                 color: #fff;
-                background-image: url('http://img.selfgrowth.cn/cooperative/bg1.jpg');
+                background-image: url('http://img.selfgrowth.cn/cooperative/bg1.png');
             }
             .about-us h1{
                 padding: 30px 0px;
@@ -37,7 +37,7 @@
                 display: none;
                 height: 100%;
                 color: #fff;
-                background: url('http://img.selfgrowth.cn/cooperative/bg1.jpg') no-repeat;
+                background: url('http://img.selfgrowth.cn/cooperative/bg1.png') no-repeat;
             }
             .cooperative_partner{
                 padding: 66px 0px;
@@ -98,28 +98,28 @@
         <div class="row about-us-partner">
             <div class="col-xs-12 about-us-partner-img">
                 <div class="col-xs-6 col-md-3 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_1.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_1.png">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_2.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_2.png">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_3.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_3.png">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_4.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_4.png">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_5.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_5.png">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_6.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_6.png">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_7.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_7.png">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_8.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_8.png">
                 </div>
             </div>
         </div>
