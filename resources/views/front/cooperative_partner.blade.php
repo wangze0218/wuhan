@@ -1,6 +1,9 @@
 @extends('front.public.master')
 @section('script')
     <style>
+        .shadow{
+            margin-top: 28px;
+        }
         .container-fluid{
             margin-top: 66px;
         }
