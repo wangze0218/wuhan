@@ -3,8 +3,8 @@
     <style>
 
         @media screen and (max-width: 768px) {
-            .carousel-caption{
-                padding-bottom: 100px;
+            .carousel{
+                margin-top: 70px;
             }
             #carousel-606461{
                 display: none;
@@ -62,8 +62,8 @@
             }
         }
         @media (min-width: 768px){
-            .carousel-caption{
-                padding-bottom: 200px;
+            .carousel{
+                margin-top: 70px;
             }
             .carousel-caption p{
                 font-size: 80px;
@@ -118,8 +118,8 @@
         }
 
         @media screen and (min-width: 1200px) {
-            .carousel-caption{
-                padding-bottom: 300px;
+            .carousel{
+                margin-top: 70px;
             }
         }
 
@@ -136,27 +136,11 @@
         </ol>
         <div class="carousel-inner">
             <div class="item active">
-                <div class="carousel-caption">
-                    <h2>
-                        大数据、舆情案例
-                    </h2>
-                    <p>
-                        探索企业发展
-                    </p>
-                </div>
-                <img alt="" src="http://img.selfgrowth.cn/home/bg1.png" />
+                <img alt="" src="http://img.selfgrowth.cn/home/bg1.jpg" />
 
             </div>
             <div class="item">
-                <img alt="" src="http://img.selfgrowth.cn/home/bg2.png" />
-                <div class="carousel-caption">
-                    <h2>
-                        互联网、大数据时代
-                    </h2>
-                    <p>
-                        洞察企业数据
-                    </p>
-                </div>
+                <img alt="" src="http://img.selfgrowth.cn/home/bg2.jpg" />
             </div>
         </div>
     </div>
@@ -174,12 +158,12 @@
     </div>
     {{--手机封面结束--}}
     {{--pc页面描述模块--}}
-    <div class="container-fluid home-describe">
-        <div class="container">
-            <h2>数据观将为企业带来什么影响？</h2>
-            <p>数据观为企业构建全员大数据的工作生态，用数据说话、用数据决策、用数据管理、用数据创新。</p>
-        </div>
-    </div>
+    {{--<div class="container-fluid home-describe">--}}
+        {{--<div class="container">--}}
+            {{--<h2>数据观将为企业带来什么影响？</h2>--}}
+            {{--<p>数据观为企业构建全员大数据的工作生态，用数据说话、用数据决策、用数据管理、用数据创新。</p>--}}
+        {{--</div>--}}
+    {{--</div>--}}
     {{--pc页面描述结束--}}
     {{--pc和手机详情模块--}}
     {{--pc和手机详情模块结束--}}
@@ -187,21 +171,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
-                    <img src="http://img.selfgrowth.cn/home/2_1.png" alt="">
+                    <img src="http://img.selfgrowth.cn/home/2_1.jpg" alt="">
                 </div>
                 <div class="col-xs-12 col-sm-6">
                     <dl>
                         <h1>
-                            做更精准、快速的决策
+                            舆情监测
                         </h1>
                         <dd>
-                            作为企业的决策者，你经常会面对一些难以抉择的问题，一个决策会影响整个业务的结果，甚至是企业的发展。
+                            推出全媒体舆情一体化解决方案，
                         </dd>
                         <dd>
-                            用数据观可以对企业及行业数据反应的趋势、规律和预测制定决策，更加准确、快速。
+                            通过舆情监测预警、分析研判等，为领导层科学决策提供依据，
                         </dd>
                         <dd>
-                            劳力士创始人为汉斯.威尔斯多夫，1908年他在瑞士将劳力士注册为商标。
+                            助力政府、企业掌握信息时代话语权，打造良好的社会形象。
                         </dd>
                     </dl>
                 </div>
@@ -214,19 +198,19 @@
                 <div class="col-xs-12 col-sm-6">
                     <dl>
                         <h1>
-                            洞察下一个商业机会
+                            数据分析
                         </h1>
                         <dd>
-                            利用正确的数据，你可以发现业务中隐藏的商业机会。数据观提供自助式的分析平台，
+                            利用各种分析软件以及方法对互联网大数据进行挖掘分析，
 
                         </dd>
                         <dd>
-                            让你的洞察不局限于固化的图表。
+                            为不同行业客户提供各类专业高端的数据分析报告服务。
                         </dd>
                     </dl>
                 </div>
                 <div class="col-xs-12 col-sm-6">
-                    <img src="http://img.selfgrowth.cn/home/2_2.png" alt="">
+                    <img src="http://img.selfgrowth.cn/home/2_2.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -235,24 +219,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
-                    <img src="http://img.selfgrowth.cn/home/2_3.png" alt="">
+                    <img src="http://img.selfgrowth.cn/home/2_3.jpg" alt="">
                 </div>
                 <div class="col-xs-12 col-sm-6">
                     <dl>
                         <h1>
-                            全员参与，数据驱动
+                            数据新闻
                         </h1>
                         <dd>
-                            对于一个企业，利用数据不应该局限于少数的决策者，让每一个人都可以利
+                            将与主流媒体合作运营数据新闻资讯栏目，
                         </dd>
                         <dd>
-                            用数据提高工作成果，这将使企业更具竞争力。
-                        </dd>
-                        <dd>
-                            数据观为企业提供一个基于数据的协作平台，你可以分享和获得更多业务见
-                        </dd>
-                        <dd>
-                            解，提高工作成果。
+                            以数据解读展示复杂政经事件以及社会百态背后的含义。
                         </dd>
                     </dl>
                 </div>
@@ -265,21 +243,18 @@
                 <div class="col-xs-12 col-sm-6">
                     <dl>
                         <h1>
-                            随身数据，随时响应
+                            解决方案
                         </h1>
                         <dd>
-                            在移动互联网时代，每一个商业机会都转瞬即逝，企业需要更加灵活高效的
+                            根据客户需求进行定制解决方案，
                         </dd>
                         <dd>
-                            方式应对这些变化。数据观可以随时随地让你掌控业务变化，根据数据洞察。
-                        </dd>
-                        <dd>
-                            快速指导下一步行动。
+                            把杂乱无序的海量信息变成直观的可视化数据产品输出。
                         </dd>
                     </dl>
                 </div>
                 <div class="col-xs-12 col-sm-6">
-                    <img src="http://img.selfgrowth.cn/home/2_4.png" alt="">
+                    <img src="http://img.selfgrowth.cn/home/2_4.jpg" alt="">
                 </div>
             </div>
         </div>

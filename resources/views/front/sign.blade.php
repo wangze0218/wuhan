@@ -76,7 +76,7 @@
         <div class="container">
                 <div class="row sing_bg text-center">
                     <a href="#">
-                        <img src="/img/huayunshuhai.png" alt="logo">
+                        <img src="/img/huayunshuhai.jpg" alt="logo">
                     </a>
                 </div>
                 <div class="row">

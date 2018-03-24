@@ -2,11 +2,11 @@
 @section('script')
     <style>
         .container-fluid{
-            margin-top: 66px;
+            margin-top: 140px;
         }
-        .page-title{
-            margin: 50px 0px;
-        }
+        /*.page-title{*/
+            /*margin: 50px 0px;*/
+        /*}*/
         .thumbnail{
             border: 0;
         }
@@ -30,7 +30,7 @@
             .thumbnail p:nth-child(2){
                 display: block;
                 height: 5px;
-                background: url(http://www.chinadata8.com/public/img/yqfw-img01.png) bottom center no-repeat;
+                background: url(http://www.chinadata8.com/public/img/yqfw-img01.jpg) bottom center no-repeat;
                 text-align: center;
                 font-size: 26px;
                 text-align: center;
@@ -67,7 +67,7 @@
             .thumbnail p:nth-child(2){
                 display: block;
                 height: 5px;
-                background: url(http://www.chinadata8.com/public/img/yqfw-img01.png) bottom center no-repeat;
+                background: url(http://www.chinadata8.com/public/img/yqfw-img01.jpg) bottom center no-repeat;
                 text-align: center;
                 font-size: 26px;
                 text-align: center;
@@ -91,9 +91,9 @@
 @section('content')
     <div class="container-fluid">
         <div class="container">
-            <div class="page-title">
-                <h1>产品服务中心</h1>
-            </div>
+            {{--<div class="page-title">--}}
+                {{--<h2>&nbsp</h2>--}}
+            {{--</div>--}}
             <div class="row" style="">
                 @foreach($articles as $k=>$v)
                     <div class="col-xs-6 col-sm-4">
@@ -107,7 +107,9 @@
                                 <p>{{$v['title_describe']}}</p>
 
                                 <p class="text-center">
+                                    <a href="/details/{{$v['article_id']}}">
                                     <button type="button" class="btn-lg btn btn-default" style="width: 80%">了解更多</button>
+                                    </a>
                                 </p>
                             </div>
                         </div>

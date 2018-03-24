@@ -2,11 +2,11 @@
 @section('script')
     <style>
         .container-fluid{
-            margin-top: 66px;
+            margin-top: 140px;
         }
-        .page-title{
-            margin: 40px 0px;
-        }
+        /*.page-title{*/
+            /*margin: 40px 0px;*/
+        /*}*/
         .media:first-child{
             margin: 30px 0px;
 
@@ -71,14 +71,14 @@
 @section('content')
     <div class="container-fluid">
         <div class="container">
-            <div class="page-title">
-                <h1>解决方案</h1>
-            </div>
+            {{--<div class="page-title">--}}
+                {{--<h1>解决方案</h1>--}}
+            {{--</div>--}}
             <div class="row">
                 <div class="col-md-12 shadow">
-                    <div class="group-list" style="padding: 0px 30px;background-color: #ddd">
-                        <h2 style="border-bottom: solid 1px #d7d7d7;padding: 30px 0px">华云数海（大数据）核心业务</h2>
-                    </div>
+                    {{--<div class="group-list" style="padding: 0px 30px;background-color: #ddd">--}}
+                        {{--<h2 style="border-bottom: solid 1px #d7d7d7;padding: 30px 0px">华云数海（大数据）核心业务</h2>--}}
+                    {{--</div>--}}
                     @foreach($articles as $k=>$v)
                         <div class="media col-md-6 ">
                             <a href="/details/{{$v['article_id']}}" style="color: #333">

@@ -9,23 +9,26 @@
         }
         @media (min-width: 768px){
             .new_center{
+                height: 187px;
                 margin-top: 30px;
                 background-color: #fff;
                 border: 1px solid #fff;
+            }
+            .new_center-left{
+                margin-top: 23px;
+                height: 137px;
             }
             .new_center-body{
                 padding: 20px 20px;
             }
             .new_center-body h3{
                 display: block;
-                font-size: 16px;
-                margin: 0 0 6px;
-                color: #8b8d8e;
+                font-size: 25px;
+                margin: 6px 0 6px;
             }
             .new_center-body .p1{
-                font-size: 20px;
+                font-size: 16px;
                 margin-bottom: 8px;
-                font-weight: 300;
             }
             .new_center-body a{
                 font-size: 20px;
@@ -103,7 +106,7 @@
                             <div class="new_center-left col-xs-4 col-sm-3">
                                 <a href="/details/{{$v['article_id']}}">
                                     <img class="new_center-object" data-src="holder.js/100X100" alt="64x64" src="{{$v['title_img']}}"
-                                         data-holder-rendered="true" style="width: 100%;">
+                                         data-holder-rendered="true" style="width: 100%;height: 100%">
                                 </a>
                             </div>
                             <div class="new_center-body col-xs-8 col-sm-9">
@@ -115,7 +118,7 @@
                 </div>
                 <div class="col-md-3 hidden-xs">
                     <div class="thumbnail shadow">
-                        <img data-src="holder.js/100%x200" alt="100%x200" src="http://img.selfgrowth.cn/weixin.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+                        <img data-src="holder.js/100%x200" alt="100%x200" src="http://img.selfgrowth.cn/weixin.jpg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
                         <div class="caption text-center">
                             <p>关注我们的微信</p>
                         </div>
@@ -129,7 +132,9 @@
                     {{--</div>--}}
                 </div>
             </div>
-            {!! $page_view !!}
+            <div class="row" style="margin-top: 20px;margin-bottom: 20px;">
+                {!! $page_view !!}
+            </div>
         </div>
     </div>
 @endsection

@@ -7,7 +7,7 @@
         .about-us{
             height: 500px;
             color: #fff;
-            background-image: url('http://img.selfgrowth.cn/about_us/bg1.png');
+            background-image: url('http://img.selfgrowth.cn/about_us/bg1.jpg');
         }
         .about-us h1{
             padding: 30px 0px;
@@ -59,13 +59,13 @@
                             公司简介
                         </h1>
                         <p>
-                            天津数观科技有限公司在大数据领域拥有丰富的技术积累和企业级服务经验。
+                            华云数海（北京）传媒科技有限公司，
                         </p>
+                    <p>
+                        是一家专注于为政府机关、事业单位及大型企业提供互联网内容及大数据个性化信息服务机构，
+                    </p>
                         <p>
-                            该团队曾历时6年自主研发国内一流的商业智能产品——GBaseBI，并在海关、中国移动、国家电网等高端客户实现了规模化应用。
-                        </p>
-                        <p>
-                            同时，天津数观科技有限公司为客户提供大数据整合方案、数据分析咨询、产品培训等一站式服务，确保深度体察客户需求，快速实现数据变现。现在，我们正在帮助越来越多的企业构建起全员大数据工作生态，让企业能够释放数据的价值，让每一个角色都能借助数据的力量。</p>
+                            致力于基于先进的大数据技术，推出集数据分析和信息咨询于一体的全新服务。
                         </p>
                 </div>
                 <div class="col-xs-2"></div>
@@ -82,7 +82,7 @@
             </div>
             <div class="row row-margin-top">
                 <div class="col-md-3">
-                    <img src="http://img.selfgrowth.cn/about_us/2_1.png" class="auto img-responsive center-block">
+                    <img src="http://img.selfgrowth.cn/about_us/2_1.jpg" class="auto img-responsive center-block">
                 </div>
                 <div class="col-md-3">
                     <h3>游戏建模师</h3>
@@ -103,7 +103,7 @@
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <img src="http://img.selfgrowth.cn/about_us/2_2.png" class="auto img-responsive center-block" alt="">
+                    <img src="http://img.selfgrowth.cn/about_us/2_2.jpg" class="auto img-responsive center-block" alt="">
                 </div>
                 <div class="col-md-3">
                     <h3>VR软件工程师</h3>

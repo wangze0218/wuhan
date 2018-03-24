@@ -52,7 +52,7 @@
         header .navbar .nav>li {
             float: left;
             line-height: 50px;
-            font-size:17px ;
+            font-size:19px ;
         }
         header .navbar-default{
             background-color: #FFFFFF;
@@ -68,7 +68,7 @@
             margin-top: 15px;
         }
         .navbar-brand img{
-            width: 100%;height: 65px;
+            width: 100%;
         }
     }
     .shadow{
@@ -101,7 +101,7 @@
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle">新闻中心<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="/news_center">行业新闻</a></li>
-                            <li><a href="/company_dynamics">本公司动态</a></li>
+                            <li><a href="/company_dynamics">公司动态</a></li>
                         </ul>
                     </li>
                     <li><a href="/cooperative_partner">合作伙伴</a></li>
