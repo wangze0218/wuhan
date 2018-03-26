@@ -46,7 +46,7 @@
 @endsection
 @section('content')
     <div class="container-fluid about-us">
-<img alt src="http://img.selfgrowth.cn/about_us/bg1.jpg" height = "600px" width="1394px;">   
+<img alt src="http://img.huayunshuhai.com/about_us/bg1.jpg" height = "600px" width="1394px;">
  
    </div>
     <div class="container-fluid">
@@ -59,7 +59,7 @@
             </div>
             <div class="row row-margin-top">
                 <div class="col-md-3">
-                    <img src="http://img.selfgrowth.cn/about_us/2_1.jpg" class="auto img-responsive center-block">
+                    <img src="http://img.huayunshuhai.com/about_us/2_1.jpg" class="auto img-responsive center-block">
                 </div>
                 <div class="col-md-3">
                     <h3>游戏建模师</h3>
@@ -80,7 +80,7 @@
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <img src="http://img.selfgrowth.cn/about_us/2_2.jpg" class="auto img-responsive center-block" alt="">
+                    <img src="http://img.huayunshuhai.com/about_us/2_2.jpg" class="auto img-responsive center-block" alt="">
                 </div>
                 <div class="col-md-3">
                     <h3>VR软件工程师</h3>

@@ -13,7 +13,7 @@ use App\System\ResponseException;
 
 class ArticleBusiness
 {
-    private $img_url = "http://img.selfgrowth.cn";
+    private $img_url = "http://img.huayunshuhai.com";
 
     public function article($article_id)
     {

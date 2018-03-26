@@ -11,7 +11,7 @@
             .about-us{
                 /*height: 500px;*/
                 color: #fff;
-                background-image: url('http://img.selfgrowth.cn/cooperative/bg1.jpg');
+                background-image: url('http://img.huayunshuhai.com/cooperative/bg1.jpg');
             }
             .about-us h1{
                 padding: 30px 0px;
@@ -40,7 +40,7 @@
                 display: none;
                 height: 100%;
                 color: #fff;
-                background: url('http://img.selfgrowth.cn/cooperative/bg1.jpg') no-repeat;
+                background: url('http://img.huayunshuhai.com/cooperative/bg1.jpg') no-repeat;
             }
             .cooperative_partner{
                 padding: 66px 0px;
@@ -103,28 +103,28 @@
         <div class="row about-us-partner">
             <div class="col-xs-12 about-us-partner-img">
                 <div class="col-xs-6 col-md-3 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/home/hezuo_1.jpg">
+                    <img class="shadow" src="http://img.huayunshuhai.com/home/hezuo_1.jpg">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/home/hezuo_2.jpg">
+                    <img class="shadow" src="http://img.huayunshuhai.com/home/hezuo_2.jpg">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/home/hezuo_3.jpg">
+                    <img class="shadow" src="http://img.huayunshuhai.com/home/hezuo_3.jpg">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/home/hezuo_4.jpg">
+                    <img class="shadow" src="http://img.huayunshuhai.com/home/hezuo_4.jpg">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/home/hezuo_5.jpg">
+                    <img class="shadow" src="http://img.huayunshuhai.com/home/hezuo_5.jpg">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/home/hezuo_6.jpg">
+                    <img class="shadow" src="http://img.huayunshuhai.com/home/hezuo_6.jpg">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/home/hezuo_7.jpg">
+                    <img class="shadow" src="http://img.huayunshuhai.com/home/hezuo_7.jpg">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/home/hezuo_8.jpg">
+                    <img class="shadow" src="http://img.huayunshuhai.com/home/hezuo_8.jpg">
                 </div>
             </div>
         </div>
