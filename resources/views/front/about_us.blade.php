@@ -46,7 +46,7 @@
 @endsection
 @section('content')
     <div class="container-fluid about-us">
-<img alt src="http://img.huayunshuhai.com/about_us/bg1.jpg" height = "600px" width="1394px;">
+        <img alt src="http://img.huayunshuhai.com/about_us/bg1.jpg"  width="100%;">
  
    </div>
     <div class="container-fluid">
