@@ -67,7 +67,7 @@
     </style>
 @endsection
 @section('content')
-    <div class="container-fluid about-us" style="height:500px;">
+    <div class="container-fluid about-us" style="height:800px;">
         <div class="container text-center">
             <div class="row">
                 <div class="col-xs-2"></div>
