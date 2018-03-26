@@ -56,7 +56,7 @@
     </style>
 @endsection
 @section('content')
-    <div class="container-fluid about-us" style="height:500px;">
+    <div class="container-fluid about-us" style="height:799px;">
     </div>
     <div class="container-fluid">
         <div class="container box-padding">
