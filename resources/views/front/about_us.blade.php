@@ -7,7 +7,7 @@
         .about-us{
             /*height: 500px;*/
             color: #fff;
-            background-image: url('http://img.huayunshuhai.com/cooperative/bg1.jpg');
+            background-image: url('http://img.huayunshuhai.com/about_us/bg1.jpg');
         }
         .about-us h1{
             padding: 30px 0px;
@@ -39,6 +39,12 @@
             color:#777;
         }
         @media screen and (max-width: 768px) {
+            .about-us{
+                display: none;
+                height: 100%;
+                color: #fff;
+                background: url('http://img.huayunshuhai.com/cooperative/bg1.jpg') no-repeat;
+            }
             .shadow {
                 box-shadow: 0 0px 0px 0px rgba(0, 0, 0, .6) !important;
             }
