@@ -4,6 +4,11 @@
         .container-fluid{
             margin-top: 66px;
         }
+        .about-us{
+            height: 500px;
+            color: #fff;
+            background-image: url('http://img.selfgrowth.cn/about_us/bg1.jpg');
+        }
         .about-us h1{
             padding: 30px 0px;
         }
@@ -46,9 +51,27 @@
 @endsection
 @section('content')
     <div class="container-fluid about-us">
-<img alt src="http://img.selfgrowth.cn/about_us/bg1.jpg" height = "600px" width="1394px;">   
- 
-   </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-8 ">
+                        <h1 class="text-center">
+                            公司简介
+                        </h1>
+                        <p>
+                            华云数海（北京）传媒科技有限公司，
+                        </p>
+                    <p>
+                        是一家专注于为政府机关、事业单位及大型企业提供互联网内容及大数据个性化信息服务机构，
+                    </p>
+                        <p>
+                            致力于基于先进的大数据技术，推出集数据分析和信息咨询于一体的全新服务。
+                        </p>
+                </div>
+                <div class="col-xs-2"></div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid">
         <div class="container box-padding">
             <div class="row">

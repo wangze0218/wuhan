@@ -4,6 +4,11 @@
         .container-fluid{
             margin-top: 66px;
         }
+        .about-us{
+            height: 500px;
+            color: #fff;
+            background-image: url('http://img.selfgrowth.cn/about_us/bg1.jpg');
+        }
         .about-us h1{
             padding: 30px 0px;
         }
@@ -46,9 +51,14 @@
 @endsection
 @section('content')
     <div class="container-fluid about-us">
-<img alt src="http://img.selfgrowth.cn/about_us/bg1.jpg" height = "600px" width="1394px;">   
- 
-   </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-xs-2"></div>
+                        
+                <div class="col-xs-2"></div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid">
         <div class="container box-padding">
             <div class="row">

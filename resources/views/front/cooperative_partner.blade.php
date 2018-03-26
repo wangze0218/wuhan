@@ -67,22 +67,24 @@
     </style>
 @endsection
 @section('content')
-    <div class="container-fluid about-us">
+    <div class="container-fluid about-us" style="height:500px;">
         <div class="container text-center">
             <div class="row">
                 <div class="col-xs-2"></div>
                 <div class="col-xs-8 ">
                     <h1 class="text-center">
-                        公司价值观
+                        
                     </h1>
-                    <p>
-                        天津数观科技有限公司在大数据领域拥有丰富的技术积累和企业级服务经验。
+                    <p>                        
                     </p>
-                    <p>
-                        该团队曾历时6年自主研发国内一流的商业智能产品——GBaseBI，并在海关、中国移动、国家电网等高端客户实现了规模化应用。
+
+                    <p>                        
                     </p>
+
                     <p>
-                        同时，天津数观科技有限公司为客户提供大数据整合方案、数据分析咨询、产品培训等一站式服务，确保深度体察客户需求，快速实现数据变现。现在，我们正在帮助越来越多的企业构建起全员大数据工作生态，让企业能够释放数据的价值，让每一个角色都能借助数据的力量。</p>
+                    </p>
+
+                    <p>
                     </p>
                 </div>
                 <div class="col-xs-2"></div>
@@ -101,28 +103,28 @@
         <div class="row about-us-partner">
             <div class="col-xs-12 about-us-partner-img">
                 <div class="col-xs-6 col-md-3 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_1.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/home/hezuo_1.jpg">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_2.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/home/hezuo_2.jpg">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_3.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/home/hezuo_3.jpg">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_4.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/home/hezuo_4.jpg">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_5.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/home/hezuo_5.jpg">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_6.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/home/hezuo_6.jpg">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_7.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/home/hezuo_7.jpg">
                 </div>
                 <div class="col-md-3 col-xs-6 ">
-                    <img class="shadow" src="http://img.selfgrowth.cn/cooperative/2_8.jpg">
+                    <img class="shadow" src="http://img.selfgrowth.cn/home/hezuo_8.jpg">
                 </div>
             </div>
         </div>

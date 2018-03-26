@@ -88,7 +88,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="">
+                <a class="navbar-brand" href="" style ="margin-right:15px;">
                     <img src="/img/huayunshuhai.png" title="华云数海" alt="华云数海" style="">
                 </a>
             </div>
@@ -109,9 +109,9 @@
                 </ul>
             </div>
                 <div class="col-xs-2 navbar-login">
-                    <ul class="nav pull-right hidden-xs">
+                    <!--<ul class="nav pull-right hidden-xs">
                         <li><a href="/sign_in" class="btn btn-default">登陆</a></li>
-                    </ul>
+                    </ul>-->
                 </div>
         </div>
     </nav>

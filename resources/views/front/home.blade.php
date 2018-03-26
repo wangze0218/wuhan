@@ -133,6 +133,8 @@
             </li>
             <li data-slide-to="1" data-target="#carousel-606461">
             </li>
+            <li data-slide-to="2" data-target="#carousel-606461">
+            </li>
         </ol>
         <div class="carousel-inner">
             <div class="item active">
@@ -141,6 +143,10 @@
             </div>
             <div class="item">
                 <img alt="" src="http://img.selfgrowth.cn/home/bg2.jpg" />
+            </div>
+
+            <div class="item">
+                 <img alt = "" src="http://img.selfgrowth.cn/home/bg3.jpg">
             </div>
         </div>
     </div>
