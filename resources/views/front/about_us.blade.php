@@ -4,6 +4,11 @@
         .container-fluid{
             margin-top: 66px;
         }
+        .about-us{
+            /*height: 500px;*/
+            color: #fff;
+            background-image: url('http://img.huayunshuhai.com/cooperative/bg1.jpg');
+        }
         .about-us h1{
             padding: 30px 0px;
         }
@@ -45,10 +50,8 @@
     </style>
 @endsection
 @section('content')
-    <div class="container-fluid about-us">
-        <img alt src="http://img.huayunshuhai.com/about_us/bg1.jpg"  width="100%;">
- 
-   </div>
+    <div class="container-fluid about-us" style="height:500px;">
+    </div>
     <div class="container-fluid">
         <div class="container box-padding">
             <div class="row">
