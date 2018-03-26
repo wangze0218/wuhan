@@ -90,14 +90,14 @@
                                 <span class="glyphicon glyphicon-lock i" aria-hidden="true"></span>
                                 <input class="form-control sign_input" type="password" maxlength="32" autocomplete="off" placeholder="用户密码" name="password" id="password">
                         </div>
-                        <div class="form-group">
-                            <label for="remember" class="check-cont">
-                                <input id="remember" name="remmber" class="hidden" type="checkbox">
-                                <span id="remember_span"></span>
-                                Remember me
-                            </label>
+                        {{--<div class="form-group">--}}
+                            {{--<label for="remember" class="check-cont">--}}
+                                {{--<input id="remember" name="remmber" class="hidden" type="checkbox">--}}
+                                {{--<span id="remember_span"></span>--}}
+                                {{--Remember me--}}
+                            {{--</label>--}}
 
-                        </div>
+                        {{--</div>--}}
                         <div class="form-group">
                             <button class="btn btn-info">Login</button>
                         </div>
