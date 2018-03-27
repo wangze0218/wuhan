@@ -81,7 +81,7 @@
                 </div>
                 <div class="row">
                     <form class="sing_in_form" id="sing_in" action="/sign_in" method="post" autocomplete="off" novalidate="novalidate">
-                        <input name="_token" type="hidden" value="{{csrf_token()}}">
+                        {!! csrf_field() !!}
                         <div class="form-group">
                                 <span class="glyphicon glyphicon-user i" aria-hidden="true"></span>
                                 <input class="form-control sign_input" type="email" autofocus="" value="" autocomplete="off" placeholder="用户名称" name="identity">
