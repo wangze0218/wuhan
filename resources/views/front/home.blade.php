@@ -1,7 +1,9 @@
 @extends('front.public.master')
 @section('style')
     <style>
-
+        dd{
+            font-size: 20px;
+        }
         @media screen and (max-width: 768px) {
             .carousel{
                 margin-top: 70px;

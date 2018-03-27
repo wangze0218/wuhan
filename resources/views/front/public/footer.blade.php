@@ -23,50 +23,7 @@
             width: 1024px;
             max-width: 1024px;
         }
-        .footer .mobile-menu-buttons {
-            display: none;
-            margin-bottom: 30px;
-            float: left;
-            min-height: 1px;
-            padding-left: 15px;
-            padding-right: 15px;
-            position: relative;
-            width: 100%;
-        }
-        .footer a.register {
-            width: 100px;
-            border-width: 2px;
-            background-color: #ee9731;
-            color: #ffffff;
-        }
-        .btn {
-            text-transform: uppercase;
-        }
-        .btn {
-            display: inline-block;
-            margin-bottom: 0;
-            font-weight: 300;
-            text-align: center;
-            vertical-align: middle;
-            cursor: pointer;
-            background-image: none;
-            border: 1px solid transparent;
-            white-space: nowrap;
-            padding: 6px 12px;
-            font-size: 14px;
-            line-height: 1.42857143;
-            border-radius: 4px;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-        .footer a.login {
-            width: 100px;
-            border-color: #EE9731;
-            border-width: 2px;
-            color: #ee9731;
-        }
+
         .footer-new .footer-list-container {
             padding: 0 32px;
             overflow: hidden;
