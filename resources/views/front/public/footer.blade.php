@@ -133,19 +133,6 @@
 </style>
 <footer id="footer" class="footer footer-new">
     <div class="container">
-        <div class="row mobile-menu-buttons">
-            <div class="hidden-device-mobile hidden-asana-logged-in">
-                <a href="https://app.shujuguan.cn/apply" class="btn register button button--secondary button--background signup-dialog-button" title="免费试用" tabindex="0">
-                    免费试用
-                </a>
-
-            </div>
-            <div class="hidden-device-mobile hidden-asana-logged-in" style="margin-top: 15px;">
-                <a href="https://app.shujuguan.cn/signin" class="btn login button button--secondary button--background" tabindex="1">
-                    登录
-                </a>
-            </div>
-        </div>
         <div class="row">
             <div class="footer-list-container">
                 <ul>
