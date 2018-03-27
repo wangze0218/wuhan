@@ -104,7 +104,7 @@
                     </form>
                 </div>
                 <div class="row form-group text-center">
-                    Copyright © 2017  <a href="http://www.zaarapp.com/"> ZAAR Technologies</a>
+                    京ICP备18010890号-1
                 </div>
             </div>
         </div>

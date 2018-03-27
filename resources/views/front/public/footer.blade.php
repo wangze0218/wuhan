@@ -167,7 +167,6 @@
                     <li><span>华云数海（北京）传媒科技有限公司</span></li>
                     <li><span>服务热线：010-80392241 010-80392774</span></li>
                     <li><span>商务合作：hyshdsj@yeah.net</span></li>
-                    <li><span>官方QQ群：57919795</span></li>
                     <li><span>地址：北京市房山区绿地启航国际6号楼1015</span></li>
                 </ul>
                 <ul>
@@ -180,6 +179,6 @@
         </div>
     </div>
     <div class="copyright text-center">
-        <a></a>
+        京ICP备18010890号-1
     </div>
 </footer>
