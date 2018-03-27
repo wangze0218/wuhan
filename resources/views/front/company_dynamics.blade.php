@@ -118,7 +118,7 @@
                 </div>
                 <div class="col-md-3 hidden-xs">
                     <div class="thumbnail shadow">
-                        <img data-src="holder.js/100%x200" alt="100%x200" src="http://img.huayunshuhai.com/weixin.jpg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+                        <img data-src="holder.js/100%x200" alt="100%x200" src="http://img.huayunshuhai.com/weixin.png" data-holder-rendered="true" style="width: 100%; display: block;">
                         <div class="caption text-center">
                             <p>关注我们的微信</p>
                         </div>
