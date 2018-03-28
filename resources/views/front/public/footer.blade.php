@@ -114,10 +114,10 @@
                     <li><span>地址：北京市房山区绿地启航国际6号楼1015</span></li>
                 </ul>
                 <ul>
-                    <li>
+                    <li style="margin-left: 20px">
                         <img src="http://img.huayunshuhai.com/weixin.png" alt="华云数海微信二维码">
                     </li>
-                    <li><span>官方微信号：hyshdsj2018</span></li>
+                    <li style="margin-left: 20px"><span>官方微信号：hyshdsj2018</span></li>
                 </ul>
             </div>
         </div>
