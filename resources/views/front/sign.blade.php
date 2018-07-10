@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>华云数海</title>
+    <title>武汉科技大学</title>
     @include('front.public.style')
     <style>
         .container{
@@ -76,7 +76,7 @@
         <div class="container">
                 <div class="row sing_bg text-center">
                     <a href="#">
-                        <img style="width: 100%;" src="/img/huayunshuhai.png" alt="logo">
+                        <img style="width: 100%;" src="/img/logo.png" alt="logo">
                     </a>
                 </div>
                 <div class="row">
@@ -84,27 +84,20 @@
                         {!! csrf_field() !!}
                         <div class="form-group">
                                 <span class="glyphicon glyphicon-user i" aria-hidden="true"></span>
-                                <input class="form-control sign_input" type="email" autofocus="" value="" autocomplete="off" placeholder="用户名称" name="identity">
+                                <input class="form-control sign_input" type="email"
+                                       autofocus="" value="" autocomplete="off" placeholder="用户名称" name="identity">
                         </div>
                         <div class="form-group">
                                 <span class="glyphicon glyphicon-lock i" aria-hidden="true"></span>
-                                <input class="form-control sign_input" type="password" maxlength="32" autocomplete="off" placeholder="用户密码" name="password" id="password">
+                                <input class="form-control sign_input" type="password"
+                                       maxlength="32" autocomplete="off" placeholder="用户密码" name="password" id="password">
                         </div>
-                        {{--<div class="form-group">--}}
-                            {{--<label for="remember" class="check-cont">--}}
-                                {{--<input id="remember" name="remmber" class="hidden" type="checkbox">--}}
-                                {{--<span id="remember_span"></span>--}}
-                                {{--Remember me--}}
-                            {{--</label>--}}
-
-                        {{--</div>--}}
                         <div class="form-group">
                             <button class="btn btn-info">Login</button>
                         </div>
                     </form>
                 </div>
                 <div class="row form-group text-center">
-                    京ICP备18010890号-1
                 </div>
             </div>
         </div>

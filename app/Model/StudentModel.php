@@ -9,10 +9,10 @@
 namespace App\Model;
 use App\Model\Model;
 
-class ArticleModel extends Model
+class StudentModel extends Model
 {
-    protected $table = 'data_article';
-    protected $primaryKey = 'article_id';
+    protected $table = 'data_student';
+    protected $primaryKey = 'student_id';
 
     protected $guarded=[];
 

@@ -15,9 +15,9 @@
                 </a>
             </li>
             <li>
-                <a @if(\Request::path() == 'behind/article')class="active"@endif href="/behind/article" >
+                <a @if(\Request::path() == 'behind/student')class="active"@endif href="/behind/student" >
                     <i class="icon-user"></i>
-                    <span>文章管理</span>
+                    <span>学生管理</span>
                 </a>
             </li>
         </ul>

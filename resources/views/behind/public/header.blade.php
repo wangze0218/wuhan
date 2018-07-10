@@ -3,7 +3,7 @@
         <div data-original-title="Toggle Navigation" data-placement="right" class="icon-reorder tooltips"></div>
     </div>
     <!--logo start-->
-    <a href="/behind" class="logo">华云<span>数海</span></a>
+    <a href="/behind" class="logo">武汉<span>科技大学</span></a>
     <!--logo end-->
     <div class="nav notify-row" id="top_menu">
         <!--  notification start -->

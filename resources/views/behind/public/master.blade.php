@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Mosaddek">
-    <meta name="keyword" content="华云数海">
+    <meta name="keyword" content="武汉科技大学">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>华云数海</title>
+    <title>武汉科技大学</title>
     @include('behind.public.style')
     @yield('style')
     <script src="{{asset('FlatLab/js/html5shiv.js')}}"></script>
@@ -82,8 +82,8 @@
     $(document).ready(function() {
         $("#owl-demo").owlCarousel({
             navigation : true,
-            slideSpeed : 300,
-            paginationSpeed : 400,
+            slideSpeed : 500,
+            paginationSpeed : 600,
             singleItem : true,
             autoPlay:true
 

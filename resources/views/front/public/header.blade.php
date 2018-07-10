@@ -79,40 +79,20 @@
 </style>
 <header id="header">
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
+        <div class="container" style="margin: auto">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header navbar-logo col-sm-3">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="" style ="margin-right:15px;">
-                    <img src="/img/huayunshuhai.png" title="华云数海" alt="华云数海" style="">
+                <a class="navbar-brand" href="" >
+                    <img src="/img/logo.jpeg" title="武汉科技大学" alt="武汉科技大学" style="">
                 </a>
             </div>
-            <div class="collapse navbar-collapse col-sm-7" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-right" >
-                    <li ><a href="/">首页</a><span class="sr-only">(current)</span></li>
-                    <li class="active"><a href="/service">产品与服务</a></li>
-                    <li><a href="/solution">解决方案</a></li>
-                    <li class="dropdown">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">新闻中心<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/news_center">行业新闻</a></li>
-                            <li><a href="/company_dynamics">公司动态</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/cooperative_partner">合作伙伴</a></li>
-                    <li><a href="/about_us">关于我们</a></li>
-                </ul>
-            </div>
-                <div class="col-xs-2 navbar-login">
-                    <!--<ul class="nav pull-right hidden-xs">
-                        <li><a href="/sign_in" class="btn btn-default">登陆</a></li>
-                    </ul>-->
-                </div>
         </div>
     </nav>
 
