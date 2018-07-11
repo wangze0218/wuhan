@@ -89,9 +89,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="" >
-                    <img src="/img/logo.jpeg" title="武汉科技大学" alt="武汉科技大学" style="">
-                </a>
+                <div style="font-size:30px;margin-top: 30px;">
+                    查询通知
+                </div>
+                {{--<a class="navbar-brand" href="" >--}}
+                    {{--<img src="/img/logo.jpg" title="武汉科技大学" alt="武汉科技大学" style="">--}}
+                {{--</a>--}}
             </div>
         </div>
     </nav>

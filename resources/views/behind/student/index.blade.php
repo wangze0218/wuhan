@@ -3,7 +3,7 @@
 @section('content')
     <div class="col-lg-12">
         <section class="form-group">
-            <a type="button" onclick="return addOrEdit('/behind/student/create','学生添加',[800,600]);"  class="btn btn-primary">添加学生</a>
+            <a type="button" onclick="return addOrEdit('/behind/student/create','学生添加',['1000px','800px']);"  class="btn btn-primary">添加学生</a>
         </section>
 
 
@@ -28,7 +28,7 @@
                                 <td>{{$v->student_name}}</td>
                                 <td>{{$v->identity}}</td>
                                 <td>
-                                    <button onclick="return addOrEdit('/behind/student/{{$v->student_id}}/edit','学生编辑',[800,600]);"
+                                    <button onclick="return addOrEdit('/behind/student/{{$v->student_id}}/edit','学生编辑',['1000px','800px']);"
                                             class="btn btn-primary btn-xs">编辑</button>
                                     <button onclick="return remove('/behind/student/{{$v->student_id}}');"
                                             class="btn btn-danger btn-xs">删除</button>

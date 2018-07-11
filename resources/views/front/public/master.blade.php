@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>武汉科技大学</title>
+    <title>武汉科技大学-洪山校区</title>
     @include('front.public.style')
     <style>
         html,body{

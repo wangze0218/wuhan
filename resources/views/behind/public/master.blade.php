@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mosaddek">
     <meta name="keyword" content="武汉科技大学">
-    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="img/logo.jpg">
 
     <title>武汉科技大学</title>
     @include('behind.public.style')

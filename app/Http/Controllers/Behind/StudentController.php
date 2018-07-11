@@ -35,6 +35,9 @@ class StudentController
         $in = $request->all();
         $param['student_name'] = $in['student_name'];
         $param['identity'] = $in['identity'];
+        $param['major'] = $in['major'];
+        $param['direction'] = $in['direction'];
+        $param['result'] = $in['result'];
         $student =  StudentModel::create($param);
         return $this->_response(10000,'请求成功',$student);
     }
@@ -55,6 +58,9 @@ class StudentController
         $in = $request->all();
         $param['student_name'] = $in['student_name'];
         $param['identity'] = $in['identity'];
+        $param['major'] = $in['major'];
+        $param['direction'] = $in['direction'];
+        $param['result'] = $in['result'];
         $student =  StudentModel::where('student_id',$id)->update($param);
         return $this->_response(10000,'请求成功',$student);
     }

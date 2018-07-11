@@ -4,7 +4,7 @@
     <div class="col-lg-12">
         <section class="form-group">
             @if(\Session('user_login')->user_admin == 1)
-                <a type="button" onclick="return addOrEdit('/behind/user/create','用户添加',[500,300]);"  class="btn btn-primary">添加用户</a>
+                <a type="button" onclick="return addOrEdit('/behind/user/create','用户添加',['1000px','800px']);"  class="btn btn-primary">添加用户</a>
             @endif
         </section>
 
@@ -39,7 +39,7 @@
                                 <td><span class="label label-info label-mini">正常</span></td>
                                 @if(\Session('user_login')->user_admin == 1)
                                 <td>
-                                    <button onclick="return addOrEdit('/behind/user/{{$v->user_id}}/edit','用户编辑',[500,300]);" class="btn btn-primary btn-xs">编辑</button>
+                                    <button onclick="return addOrEdit('/behind/user/{{$v->user_id}}/edit','用户编辑',['1000px','800px']);" class="btn btn-primary btn-xs">编辑</button>
                                     <button onclick="return remove('/behind/user/{{$v->user_id}}');" class="btn btn-danger btn-xs">删除</button>
                                 </td>
                                 @endif

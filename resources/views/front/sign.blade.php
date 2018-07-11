@@ -76,7 +76,7 @@
         <div class="container">
                 <div class="row sing_bg text-center">
                     <a href="#">
-                        <img style="width: 100%;" src="/img/logo.png" alt="logo">
+                        <img style="width: 100%;" src="/img/logo.jpg" alt="logo">
                     </a>
                 </div>
                 <div class="row">

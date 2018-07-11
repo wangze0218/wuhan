@@ -9,7 +9,7 @@
             </div>
             <div class="col-sm-5">
                 <div class="jumbotron">
-                    <p>{{$message}}</p>
+                    <p>{!! $message !!}</p>
                 </div>
 
             </div>

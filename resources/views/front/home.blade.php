@@ -3,11 +3,29 @@
 
 @endsection
 @section('content')
-    <div class="container-fluid" style="margin-top: 300px;">
+    <div class="container-fluid">
+        <div class="row-fluid" style="height: 200px;"></div>
+        <div class="row-fluid" style="height: 100px;">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-6" style="text-align: center">
+                <img style="width: 60%;" src="/img/logo.jpg" alt="logo">
+
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+
+        <div class="row-fluid" style="height: 50px;">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-6" style="text-align: center">
+                <span style="font-size: 20px;">录取查询</span>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+
         <div class="row-fluid">
             <div class="col-sm-4">
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 jumbotron">
                 <form action="student_search" method="post" class="form-horizontal">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="form-group">
@@ -29,7 +47,7 @@
                     </div>
                 </form>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-2">
             </div>
         </div>
     </div>
