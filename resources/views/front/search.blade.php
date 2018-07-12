@@ -25,7 +25,7 @@
 
                     <div class="col-sm-12" style="height: 100px;"></div>
                     <div class="jumbotron" style="background-color:transparent;">
-                        <p>{!! $message !!}</p>
+                        <p style="font-weight: 500">{!! $message !!}</p>
                     </div>
 
                 </div>
