@@ -42,7 +42,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-default">搜索</button>
+                            <button type="submit" class="btn btn-default">查询</button>
                         </div>
                     </div>
                 </form>

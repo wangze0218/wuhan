@@ -21,16 +21,19 @@ class FrontController
         $student_name = trim($in['student_name'],' ');
         $identity = trim($in['identity'],' ');
         $student = StudentModel::where('student_name',$student_name)->where('identity',$identity)->first();
-        if(empty($student->toArray())){
+
+        if(!$student){
+            $result = false;
             $message = '未被我校录入，请耐性等待。';
         }else{
+            $result = true;
             $message =
-                $student->student_name.'同学： <br>'.
-                ' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;恭喜你被我校'.$student->major.'专业录取。
+                $student->student_name.'同学： <br><br>'.
+                ' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;恭喜你被我校'.$student->major.'专业，'.$student->direction.'方向录取。<br><br>
                 '.'报到时间，见录取通知书。';
         }
 
-        return view('front.search',['message'=>$message]);
+        return view('front.search',['message'=>$message,'result'=>$result]);
     }
 
 }
