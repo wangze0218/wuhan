@@ -29,8 +29,8 @@ class FrontController
             $result = true;
             $message =
                 $student->student_name.'同学： <br><br>'.
-                ' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;恭喜你被我校'.$student->major.'专业，'.$student->direction.'方向录取。<br><br>
-                '.'报到时间，见录取通知书。';
+                ' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;经审核，你被我校定'.$student->major.'专业，'.$student->direction.'方向录取。<br><br>
+                '.'报到时间，以录取通知书为准。';
         }
 
         return view('front.search',['message'=>$message,'result'=>$result]);

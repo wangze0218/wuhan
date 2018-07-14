@@ -36,8 +36,12 @@
             }
             .result{
                 width: 100%;
-                height: 300px;
+                height: 350px;
                 background:url('/img/bg.jpg') no-repeat center;background-size:100% 100%;
+            }
+            .container-fluid .jumbotron{
+                padding-left: 37px;
+
             }
         }
     </style>
@@ -58,7 +62,8 @@
                 </div>
                 <div class="col-sm-12" style="">
 
-                    <div class="jumbotron result" style="margin: 0 auto;background-color:transparent;">
+                    <div class="result jumbotron" style="margin: 0 auto;background-color:transparent;">
+                        <p style="font-weight: 400;text-align: center;">恭喜你</p>
                         <p style="font-weight: 400">{!! $message !!}</p>
                     </div>
                 </div>
