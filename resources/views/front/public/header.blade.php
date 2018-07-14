@@ -90,15 +90,19 @@
                     <span class="icon-bar"></span>
                 </button>
                 <div style="font-size:30px;margin-top: 30px;">
-                    查询通知
+                    系统查询
                 </div>
-                {{--<a class="navbar-brand" href="" >--}}
-                    {{--<img src="/img/logo.jpg" title="武汉科技大学" alt="武汉科技大学" style="">--}}
+                    {{--厚德博学 崇实去浮--}}
+                {{--<a style="margin-top: 10px" class="navbar-brand" href="" >--}}
+                    {{--<img src="/img/head_logo_1.jpeg" title="武汉科技大学" alt="武汉科技大学" style="">--}}
                 {{--</a>--}}
             </div>
         </div>
     </nav>
-
+    {{--<div style="margin: 0 auto;text-align: center;">--}}
+        {{--<img src="/img/head_logo_1.jpeg" alt="">--}}
+        {{--<img style="    margin-left: -5px;" src="/img/head_logo_2.jpeg" alt="">--}}
+    {{--</div>--}}
 
 
 </header>
