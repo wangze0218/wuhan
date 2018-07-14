@@ -1,6 +1,9 @@
 @extends('front.public.master')
 @section('style')
     <style>
+        .row-1{
+            height: 200px;
+        }
         .head_font{
             margin-top: 30px;
         }
@@ -28,6 +31,9 @@
             }
         }
         @media screen and (max-width: 767px) {
+            .row-1{
+                height: 100px;
+            }
             .logo_img{
                 width: 60%;
             }
@@ -50,7 +56,7 @@
     @if($result)
         <div class="container-fluid" style="margin-top: 00px;">
             <div class="row-fluid">
-                <div class="col-sm-12" style="height: 200px;">
+                <div class="col-sm-12 row-1">
                     <div class="col-sm-12" style="height: 150px;"></div>
                     <div class="col-sm-12" style="font-size:30px;text-align: center;height: 50px;">
                         <div class="col-sm-4"></div>
@@ -63,7 +69,7 @@
                 <div class="col-sm-12" style="">
 
                     <div class="result jumbotron" style="margin: 0 auto;background-color:transparent;">
-                        <p style="font-family:STXingkai;font-weight: 400;text-align: center;">恭喜你</p>
+                        <p style="font-weight: 400;text-align: center;">恭喜你</p>
                         <p style="font-weight: 400">{!! $message !!}</p>
                     </div>
                 </div>
