@@ -11,7 +11,7 @@
                     <div class="col-sm-12" style="font-size:30px;text-align: center;height: 50px;">
                         <div class="col-sm-4"></div>
                         <div class="col-sm-5">
-                            <span style="width: 600px;">武汉科技大学欢迎你</span>
+                            {{--<span style="width: 600px;">武汉科技大学欢迎你</span>--}}
                         </div>
                         <div class="col-sm-2"></div>
                     </div>
