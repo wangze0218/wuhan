@@ -63,7 +63,7 @@
                 <div class="col-sm-12" style="">
 
                     <div class="result jumbotron" style="margin: 0 auto;background-color:transparent;">
-                        <p style="font-weight: 400;text-align: center;">恭喜你</p>
+                        <p style="font-family:STXingkai;font-weight: 400;text-align: center;">恭喜你</p>
                         <p style="font-weight: 400">{!! $message !!}</p>
                     </div>
                 </div>
