@@ -4,6 +4,11 @@
         .head_font{
             margin-top: 30px;
         }
+        .result{
+            width: 600px;
+            height: 400px;
+            background:url('/img/bg.jpg') no-repeat center;background-size:100% 100%;
+        }
         @media screen and (min-width: 1024px) {
             .head_font{
                 margin-top: 30px;
@@ -16,6 +21,11 @@
             .head_font{
                 margin-top: 30px;
             }
+            .result{
+                width: 600px;
+                height: 400px;
+                background:url('/img/bg.jpg') no-repeat center;background-size:100% 100%;
+            }
         }
         @media screen and (max-width: 767px) {
             .logo_img{
@@ -23,6 +33,11 @@
             }
             .head_font{
                 margin-top: 13px;
+            }
+            .result{
+                width: 100%;
+                height: 300px;
+                background:url('/img/bg.jpg') no-repeat center;background-size:100% 100%;
             }
         }
     </style>
@@ -41,20 +56,11 @@
                         <div class="col-sm-2"></div>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                </div>
-                <div class="col-sm-5" style="
-                                    width: 600px;
-                                    height: 400px;
-                                    background:url('/img/bg.jpg') no-repeat center;background-size:100% 100%;">
+                <div class="col-sm-12" style="">
 
-                    <div class="col-sm-12" style="height: 100px;"></div>
-                    <div class="jumbotron" style="background-color:transparent;">
+                    <div class="jumbotron result" style="margin: 0 auto;background-color:transparent;">
                         <p style="font-weight: 500">{!! $message !!}</p>
                     </div>
-
-                </div>
-                <div class="col-sm-2">
                 </div>
             </div>
         </div>
