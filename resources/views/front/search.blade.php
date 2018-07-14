@@ -1,6 +1,31 @@
 @extends('front.public.master')
 @section('style')
-
+    <style>
+        .head_font{
+            margin-top: 30px;
+        }
+        @media screen and (min-width: 1024px) {
+            .head_font{
+                margin-top: 30px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            .logo_img{
+                width: 60%;
+            }
+            .head_font{
+                margin-top: 30px;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            .logo_img{
+                width: 60%;
+            }
+            .head_font{
+                margin-top: 13px;
+            }
+        }
+    </style>
 @endsection
 @section('content')
     @if($result)

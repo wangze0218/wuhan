@@ -1,49 +1,76 @@
 @extends('front.public.master')
 @section('style')
     <style>
+        .head_font{
+            margin-top: 30px;
+        }
+        .row-1{
+            height: 200px;
+        }
+        .row-2{
+            height: 100px;
+        }
+        .row-3{
+            height: 50px;margin-top: 20px
+        }
+        .row-4{
+            margin-top: 30px
+        }
+        .logo_img{
+             width: 40%;
+         }
+        @media screen and (min-width: 1024px) {
+            .btn-1{
+                margin-left: -290px
+            }
+            .head_font{
+                margin-top: 30px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            .btn-1{
+                margin-left: -170px
+            }
+            .logo_img{
+                width: 60%;
+            }
+            .head_font{
+                margin-top: 30px;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            .row-1{
+                height: 100px;
+            }
+            .row-2{
+                height: 50px;
+            }
+            .logo_img{
+                width: 60%;
+            }
+            .head_font{
+                margin-top: 13px;
+            }
+        }
+
         td{
             text-align: center;padding: 5px 0px;
-
-        }
-        .nav {
-            width: 1000px;
-            height: 34px;
-            background: url(../images/wd_06.jpg) repeat-x;
-            margin: 0 auto;
-        }
-        .nav li {
-            width: 100px;
-            height: 34px;
-            line-height: 34px;
-            float: left;
-            font-size: 14px;
-            text-align: center;
-            font-weight: bold;
-        }
-        .nav li a {
-            width: 100px;
-            height: 34px;
-            display: block;
-            /*color: #fff;*/
-        }
-        ul li {
-            list-style: none;
         }
     </style>
 @endsection
 @section('content')
-    <div class="container-fluid">
-        <div class="row-fluid col-sm-12" style="height: 200px;"></div>
-        <div class="row-fluid col-sm-12" style="height: 100px;">
+    <div class="container">
+        <div class="row-fluid col-sm-12 row-1"></div>
+        <div class="row-fluid col-sm-12 row-2">
             <div class="col-sm-2"></div>
             <div class="col-sm-8" style="text-align: center">
-                <img style="width: 40%;" src="/img/logo.jpg" alt="logo">
+                <img style="" class="logo_img" src="/img/logo.jpg" alt="logo">
                 {{--<span>厚德博学 崇实去浮</span>--}}
             </div>
             <div class="col-sm-2"></div>
         </div>
 
-        <div class="row-fluid col-sm-12" style="height: 50px;margin-top: 20px">
+        <div class="row-fluid col-sm-12 row-3" style="">
             <div class="col-sm-2"></div>
             <div class="col-sm-8" style="text-align: center;border-top: 2px solid blue;padding-top: 20px">
                 <span style="font-size: 20px;">定向培养就业班录取结果查询</span>
@@ -51,7 +78,7 @@
             <div class="col-sm-2"></div>
         </div>
 
-        <div class="row-fluid col-sm-12" style="margin-top: 30px">
+        <div class="row-fluid col-sm-12 row-4" style="">
             <div class="col-sm-2">
             </div>
             <form action="/student_search" method="post">
@@ -83,7 +110,7 @@
                     </tr>
                     <tr>
                         <td style="text-align: center;" colspan="2">
-                            <button style="margin-left: -290px" type="submit" class="btn btn-primary"> &nbsp&nbsp&nbsp查 询&nbsp&nbsp&nbsp </button>
+                            <button style="" type="submit" class="btn btn-primary btn-1"> &nbsp&nbsp&nbsp查 询&nbsp&nbsp&nbsp </button>
                             <button type="reset" class="btn btn-primary"> &nbsp&nbsp&nbsp重 置&nbsp&nbsp&nbsp </button>
                         </td>
                     </tr>

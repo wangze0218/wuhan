@@ -89,7 +89,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <div style="font-size:30px;margin-top: 30px;">
+                <div class="head_font" style="font-size:30px;">
                     系统查询
                 </div>
                     {{--厚德博学 崇实去浮--}}
