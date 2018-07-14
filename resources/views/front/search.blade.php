@@ -69,8 +69,10 @@
                 <div class="col-sm-12" style="">
 
                     <div class="result jumbotron" style="margin: 0 auto;background-color:transparent;">
-                        <p style="color:red;font-weight: 500;text-align: center;">恭喜你</p>
-                        <p style="font-weight: 400">{!! $message !!}</p>
+                        <p style="color:red;font-size:22px;font-weight: 500;text-align: center;">恭喜你</p>
+                        <p style="font-weight: 400">{!! $message[0] !!}</p>
+                        <p style="font-weight: 400">{!! $message[1] !!}</p>
+                        <p style="font-weight: 400">{!! $message[2] !!}</p>
                     </div>
                 </div>
             </div>
@@ -86,7 +88,7 @@
                 <div class="col-sm-5">
                     <div class="col-sm-12"></div>
                     <div class="jumbotron">
-                        <p>{!! $message !!}</p>
+                        <p>{!! $message[0] !!}</p>
                     </div>
 
                 </div>

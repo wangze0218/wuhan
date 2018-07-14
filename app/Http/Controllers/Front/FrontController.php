@@ -24,13 +24,14 @@ class FrontController
 
         if(!$student){
             $result = false;
-            $message = '未被我校录入，请耐性等待。';
+            $message[] = '未被我校录入，请耐性等待。';
+            $message[] = '未被我校录入，请耐性等待。';
+            $message[] = '未被我校录入，请耐性等待。';
         }else{
             $result = true;
-            $message =
-                $student->student_name.'&nbsp同学： <br><br>'.
-                ' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;经审核，你被我校定'.$student->major.'专业，'.$student->direction.'方向录取。<br><br>
-                '.'报到时间，以录取通知书为准。';
+            $message[] = $student->student_name.'&nbsp同学：';
+            $message[] = ' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;经审核，你被我校定'.$student->major.'专业，'.$student->direction.'方向录取。';
+            $message[] = '报到时间，以录取通知书为准。';
         }
 
         return view('front.search',['message'=>$message,'result'=>$result]);
