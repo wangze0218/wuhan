@@ -59,7 +59,7 @@
                 <div class="col-sm-12" style="">
 
                     <div class="jumbotron result" style="margin: 0 auto;background-color:transparent;">
-                        <p style="font-weight: 500">{!! $message !!}</p>
+                        <p style="font-weight: 400">{!! $message !!}</p>
                     </div>
                 </div>
             </div>
