@@ -81,7 +81,7 @@
     @else
         <div class="container-fluid" style="margin-top: 00px;">
             <div class="row-fluid">
-                <div class="col-sm-12" style="height: 300px;">
+                <div class="col-sm-12 row-1">
                 </div>
                 <div class="col-sm-4">
                 </div>
