@@ -24,7 +24,7 @@ class FrontController
 
         if(!$student){
             $result = false;
-            $message[] = '未被我校录入，请耐心等待。';
+            $message[] = '未被我校录取，请耐心等待。';
         }else{
             $result = true;
             $message[] = $student->student_name.'&nbsp同学：';
