@@ -13,10 +13,13 @@ use App\System\ResponseException;
 
 class StudentBusiness
 {
-    public function studentList($page,$page_size = 15)
+    public function studentList($student_name='',$identity='',$page=1,$page_size=15)
     {
-        $students['data'] = StudentModel::getRecordListCondition(['deleted_at'=>null],['*'],['created_at'=>'desc'],$page,$page_size);
-        $students['count'] = StudentModel::getRecordCountCondition(['deleted_at'=>null],['*'],['created_at'=>'desc'],1,15);
+
+        $where['student_name'] = ['like'=>$student_name];
+        $where['identity'] = ['like'=>$identity];
+        $where['deleted_at'] = null;
+        $students = StudentModel::getRecordListCondition($where,['*'],['created_at'=>'desc'],$page,$page_size);
         return $students;
     }
 

@@ -3,6 +3,7 @@
 @section('content')
     <div class="col-lg-12">
         <section class="form-group">
+
             <a type="button" onclick="return addOrEdit('/behind/student/create','学生添加',['1000px','800px']);"  class="btn btn-primary">添加学生</a>
         </section>
 
@@ -11,6 +12,12 @@
             <header class="panel-heading">
                 学生列表
             </header>
+            <form class="navbar-form navbar-left" role="search" action="/behind/student">
+                <div class="form-group">
+                    <input type="text" name="search"  class="form-control" placeholder="学生姓名或身份证号">
+                </div>
+                <button type="submit" class="btn btn-default">模糊搜索</button>
+            </form>
             <table class="table table-striped table-advance table-hover">
                 <thead>
                 <tr>

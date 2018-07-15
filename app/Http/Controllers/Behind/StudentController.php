@@ -26,7 +26,11 @@ class StudentController
 
     public function index(Request $request)
     {
-        $list = StudentModel::paginate(15);
+        $search = $request['search']?$request['search']:'';
+        $page = $request['page']?$request['page']:1;
+
+        $list = $this->studentBusiness->studentList($search,$search,$page);
+        if($search) $list->appends(['search' => $search])->links();
         return view('behind.student.index',['list'=>$list]);
     }
 

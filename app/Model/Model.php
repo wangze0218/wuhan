@@ -25,8 +25,8 @@ class Model extends EloquentModel
      */
     public static function orginationQuery($where,$record){
         if(empty($where)) return $record;
+        $where_like = [];
         foreach ($where as $field=>$value){
-            $where_like = [];
             if(!is_array($value)){
                 $record->where($field, $value);
                 continue;
@@ -282,9 +282,9 @@ class Model extends EloquentModel
 
         $record = self::orginationQuery($where,$record);
 
-        if($page > 0 && $pageSize > 0){
-            $record->forPage($page, $pageSize);
-        }
+//        if($page > 0 && $pageSize > 0){
+//            $record->forPage($page, $pageSize);
+//        }
 
         if(!empty($order_by)){
             foreach ($order_by as $key=>$value){
@@ -292,7 +292,7 @@ class Model extends EloquentModel
             }
         }
 
-        return $record->get($columns);
+        return $page?$record->paginate($pageSize) : $record->get($columns);
     }
     /**
      * lists为lists而生
