@@ -86,18 +86,6 @@
                 <table class="col-sm-8" cellspacing="0" border="1" style="border-color:blue;">
                     <tr>
                         <td style="text-align: center">
-                            请输入身份证号
-                        </td>
-                        <td>
-                            <input style="
-            width: 60%;
-            margin-left: 10px;
-            height: 30px;
-" type="text" name="identity" class="form-control" id="inputPassword3" placeholder="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center">
                             请输入姓名
                         </td>
                         <td>
@@ -108,6 +96,19 @@
 " type="text" name="student_name" class="form-control" id="inputPassword3" placeholder="">
                         </td>
                     </tr>
+                    <tr>
+                        <td style="text-align: center">
+                            请输入身份证号
+                        </td>
+                        <td>
+                            <input style="
+            width: 60%;
+            margin-left: 10px;
+            height: 30px;
+" type="text" name="identity" class="form-control" id="inputPassword3" placeholder="">
+                        </td>
+                    </tr>
+
                     <tr>
                         <td style="text-align: center;" colspan="2">
                             <button style="" type="submit" class="btn btn-primary btn-1"> &nbsp&nbsp&nbsp查 询&nbsp&nbsp&nbsp </button>
