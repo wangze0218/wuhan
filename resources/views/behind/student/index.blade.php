@@ -24,7 +24,7 @@
                 </thead>
                 <tbody>
                     @if(!empty($list))
-                        @foreach($list['data'] as $k=>$v)
+                        @foreach($list as $k=>$v)
                             <tr>
                                 <td><a href="#">{{$k+1}}</a></td>
                                 <td>{{$v->student_name}}</td>
@@ -42,6 +42,9 @@
                     @endif
                 </tbody>
             </table>
+            @if(!empty($list))
+            {{ $list->links() }}
+            @endif
         </section>
     </div>
 @endsection

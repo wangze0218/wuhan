@@ -26,7 +26,7 @@ class StudentController
 
     public function index(Request $request)
     {
-        $list = $this->studentBusiness->studentList();
+        $list = StudentModel::paginate(15);
         return view('behind.student.index',['list'=>$list]);
     }
 

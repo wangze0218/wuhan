@@ -28,7 +28,7 @@ class FrontController
         }else{
             $result = true;
             $message[] = $student->student_name.'&nbsp同学：';
-            $message[] = ' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;经审核，你被武汉科技大学'.$student->major.'专业，'.$student->direction.'方向录取。';
+            $message[] = ' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;经审核，你被我校'.$student->major.'专业，'.$student->direction.'方向录取。';
             $message[] = '入学时间，请参照录取通知书。';
         }
 
