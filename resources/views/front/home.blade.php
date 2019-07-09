@@ -137,8 +137,12 @@
                                 <p>验证码</p>
                             </td>
                             <td>
-                                <input type="" name="" style="width:60px;float:left;margin-left:10px;height:20px;" >
-                                <p style="float:left; margin-left:30px;">1234</p>
+                                @if($captcha)
+                                    <input name="captcha" type="验证码错误" style="width:60px;float:left;margin-left:10px;height:36px;" >
+                                @else
+                                    <input name="captcha" type="" style="width:60px;float:left;margin-left:10px;height:36px;" >
+                                @endif
+                                <p style="float:right;"><a href="">{{ captcha_img(1)}}</a></p>
                             </td>
                         </tr>
                         <tr>

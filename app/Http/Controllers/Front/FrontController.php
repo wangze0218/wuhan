@@ -17,6 +17,13 @@ class FrontController
 
     public function student_search(Request $request)
     {
+        $rules = ['captcha' => 'required|captcha'];
+        $validator = validator()->make($request->all(), $rules);
+
+        if ($validator->fails()) {
+            return view('front.home',['captcha'=>true]);
+        }
+
         $in = $request->all();
         $student_name = trim($in['student_name'],' ');
         $identity = trim($in['identity'],' ');
