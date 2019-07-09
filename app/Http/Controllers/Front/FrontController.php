@@ -27,11 +27,13 @@ class FrontController
             $message[] = '未被我校录取，请耐心等待。';
         }else{
             $result = true;
-            $message[] = $student->student_name.'&nbsp同学：';
-            $message[] = ' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;经审核，你被我校'.$student->major.'专业，'.$student->direction.'方向录取。';
-            $message[] = '入学时间，请参照录取通知书。';
+            $message[] = $student->student_name;
+            $message[] = $student->identity; 
+            $message[] = '录取'; 
+            $message[] = $student->major; 
+            $message[] = '四年（本科）';
+            $message[] = '入学时间，请参照录取通知书';
         }
-
         return view('front.search',['message'=>$message,'result'=>$result]);
     }
 

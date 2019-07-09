@@ -16,7 +16,7 @@
                     <label for="exampleInputPassword1">身份证号</label>
                     <input class="form-control" name="identity" id="exampleInputPassword1" placeholder="请输入身份证号" type="text">
                 </div>
-
+                
                 <div class="form-group">
                     <label for="exampleInputPassword1">专业</label>
                     <input class="form-control" name="major" id="exampleInputPassword1" placeholder="输入专业" type="text">

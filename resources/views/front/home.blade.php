@@ -1,132 +1,157 @@
-@extends('front.public.master')
-@section('style')
-    <style>
-        .head_font{
-            margin-top: 30px;
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style type="text/css">
+    *{
+        margin:0;
+        padding:0;
+    }
+    body{
+        background:url("/img/beijing_3.png") fixed;
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+    
+    .max_zong{
+        width:500px;
+        margin:0 auto;
+        margin-top:60px;
+    }
+    .logo{
+        /*width:500px;*/
+        height:100px;
+    }
+    .logo h1{
+        font-size:45px;
+        margin-left
+        padding-top:-40px;
+        margin-left:35px;
+        float:left;
+        color:#fff;
+        font-weight:bold;
+    }
+    .logo h2{
+        float:left;
+        margin-top:10px;
+        margin-left:60px;
+        font-size:25px;
+        color:blue;
+    }
+    .logo img{
+        height:100px;
+        width:100px;
+        float:left;
+        border-radius:50px;
+        margin-left:30px;
+    }
+    
+        .zong{
+            width:450px;
+            height:300px;
+            background:#fff;
+            opacity:0.9; 
+            margin:0 auto;
+            margin-top:30px;
+            border-radius:20px;
+            border:5px solid #cfcfcf;
+            box-shadow:5px 5px 5px #cfcfcf,5px -5px 10px #cfcfcf,-5px 5px 5px #cfcfcf,-5px -5px 5px #cfcfcf;
         }
-        .row-1{
-            height: 200px;
+        
+        tr{
+            width:700px;
         }
-        .row-2{
-            height: 100px;
-        }
-        .row-3{
-            height: 50px;margin-top: 20px
-        }
-        .row-4{
-            margin-top: 30px
-        }
-        .logo_img{
-             width: 40%;
-         }
-        @media screen and (min-width: 1024px) {
-            .btn-1{
-                margin-left: -290px
-            }
-            .head_font{
-                margin-top: 30px;
-            }
-        }
-        @media screen and (min-width: 768px) and (max-width: 1024px) {
-            .btn-1{
-                margin-left: -170px
-            }
-            .logo_img{
-                width: 60%;
-            }
-            .head_font{
-                margin-top: 30px;
-            }
-        }
-        @media screen and (max-width: 767px) {
-            .row-1{
-                height: 100px;
-            }
-            .row-2{
-                height: 50px;
-            }
-            .logo_img{
-                width: 60%;
-            }
-            .head_font{
-                margin-top: 13px;
-            }
-        }
-
         td{
-            text-align: center;padding: 5px 0px;
+            height:50px;
+        }
+        .td1{
+            width:200px;
+        }
+        .td2{
+            width:120px;
+        }
+        .fdiv{
+            margin-top:10px;
+        }
+        table{
+            margin:60px auto;
+            margin-top:-10px;
+        }
+        .sname{
+            width:400px;
+            height:60px;
+            margin:0 auto;
+        }
+        .sname p{
+            font-size:30px;
+            margin-left:140px;
+            margin-top:20px;
+            color:#d9d2dd;
+        }
+        button{
+            width:80px;
+            height:30px;
+            border-radius:5px;
+            font-size:15px;
+        }
+        .sub1{
+            margin-left:100px;
         }
     </style>
-@endsection
-@section('content')
-    <div class="container">
-        <div class="row-fluid col-sm-12 row-1"></div>
-        <div class="row-fluid col-sm-12 row-2">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8" style="text-align: center">
-                <img style="" class="logo_img" src="/img/logo.jpg" alt="logo">
-                {{--<span>厚德博学 崇实去浮</span>--}}
-            </div>
-            <div class="col-sm-2"></div>
+</head>
+<body>
+    <div class="max_zong">
+        <div class="logo">
+            <img src="/img/logo_1.jpg">
+            <h1>武汉科技大学</h1>
+            <h2>应用本科录取查询</h2>
         </div>
-
-        <div class="row-fluid col-sm-12 row-3" style="">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8" style="text-align: center;border-top: 2px solid blue;padding-top: 20px">
-                <span style="font-size: 20px;">定向培养就业班录取结果查询</span>
+        
+        <div class="zong">
+            <div class='sname'>
+                <p>考生查询</p>
             </div>
-            <div class="col-sm-2"></div>
-        </div>
-
-        <div class="row-fluid col-sm-12 row-4" style="">
-            <div class="col-sm-2">
-            </div>
-            <form action="/student_search" method="post">
-                <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                <table class="col-sm-8" cellspacing="0" border="1" style="border-color:blue;">
-                    <tr>
-                        <td style="text-align: center">
-                            请输入姓名
-                        </td>
-                        <td>
-                            <input style="
-            width: 60%;
-            margin-left: 10px;
-            height: 30px;
-" type="text" name="student_name" class="form-control" id="inputPassword3" placeholder="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center">
-                            请输入身份证号
-                        </td>
-                        <td>
-                            <input style="
-            width: 60%;
-            margin-left: 10px;
-            height: 30px;
-" type="text" name="identity" class="form-control" id="inputPassword3" placeholder="">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td style="text-align: center;" colspan="2">
-                            <button style="" type="submit" class="btn btn-primary btn-1"> &nbsp&nbsp&nbsp查 询&nbsp&nbsp&nbsp </button>
-                            <button type="reset" class="btn btn-primary"> &nbsp&nbsp&nbsp重 置&nbsp&nbsp&nbsp </button>
-                        </td>
-                    </tr>
-                </table>
-
-            </form>
-
-
-            <div class="col-sm-2">
+            <div class='fdiv'>
+                 <form action="/student_search" method="post">
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    <table class="col-sm-8" cellspacing="0" style="border:hidden;">
+                        <tr class='tr1'>
+                            <td style="text-align: center" class='td2'> 
+                                请输入姓名
+                            </td>
+                            <td class="td1">
+                                <input style="width: 80%; margin-left: 10px;height: 25px;" type="text" name="student_name" class="form-control" id="inputPassword3" placeholder="">
+                            </td>
+                        </tr>
+                        <tr class='tr1'>
+                            <td style="text-align: center" class='td2'>
+                                请输入身份证号
+                            </td>
+                            <td class="td1">
+                                <input style=" width: 80%;margin-left: 10px;height: 25px;" type="text" name="identity" class="form-control" id="inputPassword3" placeholder="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">
+                                <p>验证码</p>
+                            </td>
+                            <td>
+                                <input type="" name="" style="width:60px;float:left;margin-left:10px;height:20px;" >
+                                <p style="float:left; margin-left:30px;">1234</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;" colspan="2">
+                                <button style="" type="submit" class="btn btn-primary btn-1"> &nbsp&nbsp&nbsp查 询&nbsp&nbsp&nbsp </button>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                <button type="reset" class="btn btn-primary"> &nbsp&nbsp&nbsp重 置&nbsp&nbsp&nbsp </button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
             </div>
         </div>
-    </div>
-@endsection
-
-
-
-
-
+    </div>    
+</body>
+</html>
