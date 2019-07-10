@@ -137,7 +137,7 @@
                                 <p>验证码</p>
                             </td>
                             <td>
-                                @if($captcha)
+                                @if(isset($captcha) && $captcha)
                                     <input name="captcha" type="验证码错误" style="width:60px;float:left;margin-left:10px;height:36px;" >
                                 @else
                                     <input name="captcha" type="" style="width:60px;float:left;margin-left:10px;height:36px;" >
