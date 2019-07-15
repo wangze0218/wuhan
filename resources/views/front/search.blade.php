@@ -112,7 +112,9 @@
         }
         .zong .zong_center{
             width:100%;
+            height:100%;
             margin:0 auto;
+            height:500px;
         }
          .zong .zong_center .biaoti{
             width:100%;
@@ -134,8 +136,7 @@
          }
          .zong .zong_center .jieguo{
             width:100%;
-            height:230px;
-            /*background:blue;*/
+            height:100%px;
          }
          .zong .zong_center .jieguo table{
             margin:0 auto;
@@ -157,6 +158,8 @@
          }
          .zong .zong_center .jieguo table tr .td1 p{
             margin-left:8px;
+            color:blue;
+            font-weight:bold;
          }
          .bottom{
             width:356px;
@@ -247,26 +250,26 @@
                     <table border='1px #E0E0E0'>
                         <tr>
                             <td class='td2'>
-                                <p style='color:blue;font-weight:bold;'>学生姓名</p>
+                                <p>学生姓名</p>
                             </td>
                             <td class='td1'>
-                                <p style='color:blue;font-weight:bold;'>{!! $message[0] !!}</p>
+                                <p>{!! $message[0] !!}</p>
                             </td>
                         </tr>
                         <tr>
                             <td class='td2'>
-                                <p style='color:blue;font-weight:bold;'>身份证号</p>
+                                <p>身份证号</p>
                             </td>
                             <td class='td1'>
-                                <p style='color:blue;font-weight:bold;'>{!! $message[1] !!}</p>
+                                <p>{!! $message[1] !!}</p>
                             </td>
                         </tr>
                         <tr>
                             <td class='td2'>
-                                <p style='color:blue;font-weight:bold;'>录取状态</p>
+                                <p>录取状态</p>
                             </td>
                             <td class='td1'>
-                                <p style='color:blue;font-weight:bold;'>{!! $message[2] !!}</p>
+                                <p>{!! $message[2] !!}</p>
                             </td>
                         </tr>
                         <tr>
@@ -293,8 +296,17 @@
                                 <p>请参照入学须知</p>
                             </td>
                         </tr>
+                         <tr>
+                            <td class='td2'>
+                                <p>报到地点</p>
+                            </td>
+                            <td class='td1'>
+                                <p  style="font-size:13px;">{!! $message[6] !!}</p>
+                            </td>
+                        </tr>
                     </table>
                 </div>
+                <div style='height:20px;'></div>
                 <div class='bottom'>
                     <div class='bottom_li'>
                         <p>本校是教育部批准的具有高等学历教育招生资格的普通高校</p>

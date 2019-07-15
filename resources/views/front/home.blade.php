@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title></title>
@@ -17,7 +17,7 @@
     .max_zong{
         width:500px;
         margin:0 auto;
-        margin-top:60px;
+        margin-top:100px;
     }
     .logo{
         /*width:500px;*/
@@ -98,6 +98,28 @@
         .sub1{
             margin-left:100px;
         }
+        .code{
+        background-image:url(111.jpg);
+        font-family:Arial,宋体;
+        font-style:italic;
+        color:green;
+        border:0;
+        padding:2px 3px;
+        letter-spacing:3px;
+        font-weight:bolder;
+        }
+        .unchanged {
+        border:0;
+    }
+     @media screen and (max-width: 767px) {
+               .max_zong{
+                margin-top:200px;
+               }
+               /*.max_zong .zong .fdiv{
+                width:500px;
+                height:500px;
+               }*/
+            }
     </style>
 </head>
 <body>
@@ -132,18 +154,20 @@
                                 <input style=" width: 80%;margin-left: 10px;height: 25px;" type="text" name="identity" class="form-control" id="inputPassword3" placeholder="">
                             </td>
                         </tr>
-                        <tr>
+                     	<tr>
                             <td style="text-align: center">
-                                <p>验证码</p>
+                                <p>验证码</p >
                             </td>
                             <td>
                                 @if(isset($captcha) && $captcha)
-                                    <input name="captcha" type="验证码错误" style="width:60px;float:left;margin-left:10px;height:36px;" >
+                                    <input name="captcha" type="请输入正确的验证码" style="width:60px;float:left;margin-left:10px;height:36px;" >
                                 @else
                                     <input name="captcha" type="" style="width:60px;float:left;margin-left:10px;height:36px;" >
                                 @endif
-                                <p style="float:right;"><a href="">{{ captcha_img(1)}}</a></p>
+                                <p style="float:right;"><a href="/">{{ captcha_img(1)}}</a></p >
                             </td>
+                        </tr>
+                          	</td>
                         </tr>
                         <tr>
                             <td style="text-align: center;" colspan="2">
@@ -159,3 +183,4 @@
     </div>    
 </body>
 </html>
+

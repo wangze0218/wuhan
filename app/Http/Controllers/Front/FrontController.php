@@ -40,6 +40,7 @@ class FrontController
             $message[] = $student->major; 
             $message[] = '四年（本科）';
             $message[] = '入学时间，请参照录取通知书';
+            $message[] = '武汉科技大学洪山校区综合楼';
         }
         return view('front.search',['message'=>$message,'result'=>$result]);
     }
